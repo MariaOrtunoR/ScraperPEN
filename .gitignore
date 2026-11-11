@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+
+# Datos locales regenerables o con historial de consultas.
+data/database/*.db
+data/raw/descargas_excel/*.xlsx
+data/raw/descargas_pdf/*.pdf
+data/processed/*.xlsx
