@@ -14,3 +14,8 @@ data/processed/*.xlsx
 AGENTS.md
 ROADMAP.md
 SEGUIMIENTO_PROYECTO.md
+
+# Recursos locales de referencia (no publicar en GitHub)
+resources/MALAGA.geojson
+resources/Metodologia PIN CTNotariado.pdf
+resources/evolucionpreciovivienda.xlsx
