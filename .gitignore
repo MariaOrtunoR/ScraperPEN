@@ -6,6 +6,11 @@ venv/
 
 # Datos locales regenerables o con historial de consultas.
 data/database/*.db
-data/raw/descargas_excel/*.xlsx
-data/raw/descargas_pdf/*.pdf
+data/raw/excel/*.xlsx
+data/raw/pdf/*.pdf
 data/processed/*.xlsx
+
+# Documentación interna del proyecto (no publicar en GitHub)
+AGENTS.md
+ROADMAP.md
+SEGUIMIENTO_PROYECTO.md

@@ -21,8 +21,8 @@ from src.DatabaseManager import (
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DIR_PDF = PROJECT_ROOT / "data" / "raw" / "descargas_pdf"
-DIR_EXCEL = PROJECT_ROOT / "data" / "raw" / "descargas_excel"
+DIR_PDF = PROJECT_ROOT / "data" / "raw" / "pdf"
+DIR_EXCEL = PROJECT_ROOT / "data" / "raw" / "excel"
 CP_PRUEBA = os.getenv("PEN_CP_PRUEBA", "29710")
 EJECUTAR_TODOS_LOS_CP = os.getenv("PEN_EJECUTAR_TODOS_CP", "0") == "1"
 
