@@ -1,4 +1,0 @@
-- No modificar funcionalidades existentes sin analizar previamente su impacto.
-- No eliminar código ni documentación sin autorización.
-- Actualizar la documentación cuando se complete una tarea.
-- Consultar antes de tomar decisiones arquitectónicas importantes.
