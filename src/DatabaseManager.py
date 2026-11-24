@@ -103,7 +103,7 @@ def normalizar_valor(valor):
     if isinstance(valor, (int, float)):
         return valor
     texto = str(valor).strip()
-    if not texto or texto.lower() in {"nan", "none", "null", "-", "—"}:
+    if not texto or texto.lower() in {"nan", "none", "null", "n/a", "na", "-", "—"}:
         return None
     texto = texto.replace("€", "").replace("\u00a0", "").replace(" ", "")
     if "," in texto and "." in texto:

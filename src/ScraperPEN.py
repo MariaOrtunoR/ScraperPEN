@@ -2,11 +2,16 @@
 
 import os
 import re
+import sys
 from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
-from playwright.sync_api import Playwright, sync_playwright
+from playwright.sync_api import Playwright, TimeoutError, sync_playwright
+
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from src.DatabaseManager import (
     guardar_registros,
@@ -22,11 +27,7 @@ CP_PRUEBA = os.getenv("PEN_CP_PRUEBA", "29710")
 EJECUTAR_TODOS_LOS_CP = os.getenv("PEN_EJECUTAR_TODOS_CP", "0") == "1"
 
 # Este patrón deberá contrastarse con el mensaje exacto del portal en la prueba.
-PATRONES_DATOS_PROVINCIALES = (
-    r"datos.*no\s+(?:corresponden|se\s+corresponden).*provincia",
-    r"mostrando.*datos.*provincia",
-    r"datos.*provinciales",
-)
+PATRONES_DATOS_PROVINCIALES = (r"Los datos mostrados a continuación no se corresponden con la ubicación indicada al no disponer de datos suficientes",)
 
 
 def obtener_credenciales():
@@ -39,31 +40,57 @@ def obtener_credenciales():
     return usuario, contrasena
 
 
-def codigos_a_consultar():
+def codigos_a_consultar(cps_argumentos=None):
     catalogo = obtener_codigos_postales()
+
+    # Si se pasan CP por terminal, tienen prioridad
+    if cps_argumentos:
+        cps = list(dict.fromkeys(cps_argumentos))  # Elimina duplicados
+
+        cps_invalidos = [cp for cp in cps if cp not in catalogo]
+        if cps_invalidos:
+            raise ValueError(f"CP no válidos: {cps_invalidos}")
+
+        return cps
+
+    # Comportamiento actual si no se pasan argumentos
     if EJECUTAR_TODOS_LOS_CP:
         return catalogo
+
     if CP_PRUEBA not in catalogo:
         raise ValueError(f"El CP de prueba {CP_PRUEBA!r} no existe en el catálogo.")
+
     return [CP_PRUEBA]
 
 
 def extraer_tabla(page, metrica):
-    """Extrae las filas visibles de la tabla activa."""
+    """Extrae los datos priorizando estimaciones cuando existan."""
     registros = []
     page.wait_for_selector("table", timeout=5_000)
-    for fila in page.locator("table tr").all():
-        textos = [celda.inner_text().strip() for celda in fila.locator("th, td").all()]
-        if len(textos) >= 2 and textos[0].lower() not in {"periodo", "fecha", "mes"}:
-            registros.append({"Métrica": metrica, "Periodo": textos[0], "Valor": textos[1]})
+
+    for fila in page.locator("table tbody tr").all():
+        datos = {c.get_attribute("data-label"): c.inner_text().strip() for c in fila.locator("td").all()}
+        periodo = datos.get("Periodo")
+        if not periodo:
+            continue
+
+        valor = datos.get("Estimación (€ / m²)", datos.get("Precio (€ / m²)", next((v for k, v in datos.items() if k != "Periodo"), None)))
+        valor = None if valor is None or valor.upper() in {"N/A", "NA", "-", ""} else valor
+        registros.append({"Métrica": metrica, "Periodo": periodo, "Valor": valor})
+
     if not registros:
         raise RuntimeError(f"La tabla de {metrica} no contiene registros.")
     return registros
 
 
 def hay_datos_provinciales(page):
-    texto = page.locator("body").inner_text(timeout=5_000)
-    return any(re.search(patron, texto, re.IGNORECASE | re.DOTALL) for patron in PATRONES_DATOS_PROVINCIALES)
+    mensaje = page.locator(".c-ctn-message__content").first
+    try:
+        mensaje.wait_for(state="visible", timeout=2_000)
+        texto = mensaje.inner_text(timeout=2_000)
+    except TimeoutError:
+        return False
+    return any(re.search(patron, texto, re.IGNORECASE) for patron in PATRONES_DATOS_PROVINCIALES)
 
 
 def validar_metricas(registros):
@@ -151,7 +178,7 @@ def consultar_cp(page, cp, fecha_hoy):
 
 def run(playwright: Playwright) -> None:
     usuario, contrasena = obtener_credenciales()
-    codigos = codigos_a_consultar()
+    codigos = codigos_a_consultar(sys.argv[1:])
     DIR_PDF.mkdir(parents=True, exist_ok=True)
     DIR_EXCEL.mkdir(parents=True, exist_ok=True)
     fecha_hoy = datetime.now().strftime("%Y%m%d")
