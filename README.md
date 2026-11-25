@@ -49,7 +49,8 @@ ScraperPEN/
 ├── src/
 │   ├── ScraperPEN.py
 │   ├── CreateDatabase.py
-│   └── DatabaseManager.py
+│   ├── DatabaseManager.py
+│   └── ProcessData.py
 │
 ├── tests/
 │
@@ -74,11 +75,12 @@ ScraperPEN/
 
 ### `src/`
 
-Contiene los tres módulos Python principales:
+Contiene los cuatro módulos Python principales:
 
-- `ScraperPEN.py`: automatiza las consultas al portal, descarga los archivos, extrae las estadísticas y coordina su almacenamiento.
+- `ScraperPEN.py`: automatiza las consultas al portal, descarga los archivos, extrae las estadísticas y coordina el proceso.
 - `CreateDatabase.py`: inicializa la estructura de la base de datos SQLite.
 - `DatabaseManager.py`: centraliza las operaciones de acceso, normalización y almacenamiento de datos.
+- `ProcessData.py`: transforma `datos_crudos` en la tabla analítica `datos_resumen`, pivotando las métricas a columnas.
 
 ### `data/`
 
@@ -103,10 +105,11 @@ Contiene la documentación técnica y las decisiones de diseño.
 
 ## 6. Base de datos
 
-La información se almacena en SQLite, mediante tres tablas principales:
+La información se almacena en SQLite mediante cuatro tablas:
 
 - `codigos_postales`: catálogo maestro de códigos postales y municipios.
-- `datos_crudos`: observaciones inmobiliarias válidas.
+- `datos_crudos`: observaciones inmobiliarias válidas en formato largo.
+- `datos_resumen`: datos transformados en formato ancho, con una fila por código postal y periodo.
 - `log_descargas`: historial de consultas y resultados.
 
 Las tres métricas inmobiliarias almacenadas son:
@@ -115,9 +118,9 @@ Las tres métricas inmobiliarias almacenadas son:
 - `compraventas`: número de compraventas.
 - `importe_medio`: importe medio de las operaciones.
 
-La combinación de código postal, periodo y métrica identifica de forma única cada observación.
+La combinación de código postal, periodo y métrica identifica de forma única cada observación en `datos_crudos`. En `datos_resumen`, la clave primaria es `(cp, periodo)` y las tres métricas (`precio_m2`, `compraventas`, `importe_medio`) se almacenan en columnas independientes.
 
-Los datos existentes se actualizan cuando se vuelven a descargar periodos ya almacenados.
+`ProcessData.py` actualiza los registros de `datos_resumen` a partir de todos los datos de `datos_crudos`, sin modificar ni borrar la tabla original. La transformación se ejecuta al final de cada ejecución del scraper y también puede lanzarse de forma independiente.
 
 ## 7. Configuración del entorno
 

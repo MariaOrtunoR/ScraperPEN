@@ -19,17 +19,13 @@ Las decisiones aquí recogidas deben consultarse antes de plantear cambios que a
 
 **Consecuencia:** las futuras modificaciones del scraper deberán realizarse en ese archivo, salvo que se acuerde expresamente cambiar esta decisión.
 
-### DEC-002. Mantener tres módulos dentro de `src/`
+### DEC-002. Mantener los módulos principales dentro de `src/` (sustituida parcialmente por DEC-028)
 
-**Decisión:** la carpeta `src/` contendrá únicamente:
-
-- `ScraperPEN.py`
-- `CreateDatabase.py`
-- `DatabaseManager.py`
+**Decisión original:** la carpeta `src/` contenía únicamente `ScraperPEN.py`, `CreateDatabase.py` y `DatabaseManager.py`.
 
 **Motivo:** separar las responsabilidades principales sin fragmentar innecesariamente el código.
 
-**Consecuencia:** no se crearán nuevos módulos dentro de `src/` sin una decisión previa.
+**Estado:** el límite de tres módulos ha sido sustituido por DEC-028. Se conserva el criterio de mantener una estructura sencilla y de no añadir módulos sin una decisión expresa.
 
 ### DEC-003. Eliminar los scripts de migración y transformación antiguos
 
@@ -40,7 +36,7 @@ Las decisiones aquí recogidas deben consultarse antes de plantear cambios que a
 
 **Motivo:** se ha decidido simplificar la estructura y retirar esos scripts del conjunto de módulos activos.
 
-**Consecuencia:** no deben recuperarse ni incorporarse de nuevo automáticamente. Cualquier necesidad futura de migración o transformación deberá estudiarse antes de decidir cómo implementarla.
+**Consecuencia:** no se recuperan esos archivos antiguos. La creación posterior de `src/ProcessData.py` es un módulo nuevo, aprobado específicamente en la Fase 7, y no una recuperación del antiguo `TransformData.py`.
 
 ### DEC-004. Mantener `resources/` sin modificaciones
 
@@ -291,11 +287,33 @@ Entre las dependencias actuales se encuentran:
 
 **Motivo:** mantener la documentación alineada con el funcionamiento real del proyecto.
 
+### DEC-028. Incorporar `ProcessData.py` y `datos_resumen`
+
+**Decisión:** incorporar `src/ProcessData.py` como cuarto módulo principal. El módulo transforma los registros de `datos_crudos` a la tabla `datos_resumen`, pivotando `metrica` para obtener las columnas `precio_m2`, `compraventas` e `importe_medio`.
+
+La tabla `datos_resumen` tendrá:
+
+- Clave primaria compuesta `(cp, periodo)`.
+- Clave foránea `cp` hacia `codigos_postales(cp)`.
+- Una columna numérica para cada una de las tres métricas.
+- Valores `NULL` cuando una métrica no esté disponible.
+
+**Motivo:** disponer de una estructura analítica en formato ancho, más cómoda para consultas, comparaciones y visualizaciones, sin alterar la tabla de observaciones original.
+
+**Consecuencias:**
+
+- `CreateDatabase.py` crea la tabla `datos_resumen` mediante `CREATE TABLE IF NOT EXISTS`.
+- `ProcessData.py` lee todos los registros de `datos_crudos` y actualiza `datos_resumen` mediante UPSERT.
+- `ScraperPEN.py` ejecuta la transformación una vez al finalizar el bucle de códigos postales.
+- La transformación también puede ejecutarse de forma independiente con `python -m src.ProcessData`.
+- `datos_crudos` no se modifica ni se elimina durante la transformación.
+- La carpeta `src/` pasa a contener cuatro módulos principales, sustituyendo el límite establecido en DEC-002.
+
 ## 7. Cómo modificar este registro
 
 Cuando se adopte una nueva decisión importante:
 
-1. Asignar un identificador consecutivo (`DEC-028`, `DEC-029`, etc.).
+1. Asignar un identificador consecutivo (`DEC-029`, `DEC-030`, etc.).
 2. Describir la decisión de forma clara.
 3. Explicar brevemente el motivo.
 4. Indicar sus consecuencias para el proyecto.

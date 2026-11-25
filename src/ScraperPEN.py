@@ -1,3 +1,4 @@
+
 """Descarga controlada de estadísticas inmobiliarias del Portal Notarial."""
 
 import os
@@ -7,9 +8,8 @@ from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
-from playwright.sync_api import Playwright, TimeoutError, sync_playwright
-
 from dotenv import load_dotenv
+from playwright.sync_api import Playwright, TimeoutError, sync_playwright
 
 load_dotenv()
 
@@ -18,6 +18,7 @@ from src.DatabaseManager import (
     obtener_codigos_postales,
     registrar_descarga,
 )
+from src.ProcessData import procesar_datos
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -26,40 +27,31 @@ DIR_EXCEL = PROJECT_ROOT / "data" / "raw" / "excel"
 CP_PRUEBA = os.getenv("PEN_CP_PRUEBA", "29710")
 EJECUTAR_TODOS_LOS_CP = os.getenv("PEN_EJECUTAR_TODOS_CP", "0") == "1"
 
-# Este patrón deberá contrastarse con el mensaje exacto del portal en la prueba.
-PATRONES_DATOS_PROVINCIALES = (r"Los datos mostrados a continuación no se corresponden con la ubicación indicada al no disponer de datos suficientes",)
+PATRONES_DATOS_PROVINCIALES = (
+    r"Los datos mostrados a continuación no se corresponden con la ubicación indicada al no disponer de datos suficientes",
+)
 
 
 def obtener_credenciales():
     usuario = os.getenv("PEN_USER_EMAIL")
     contrasena = os.getenv("PEN_USER_PASSWORD")
     if not usuario or not contrasena:
-        raise RuntimeError(
-            "Faltan PEN_USER_EMAIL y/o PEN_USER_PASSWORD en las variables de entorno."
-        )
+        raise RuntimeError("Faltan PEN_USER_EMAIL y/o PEN_USER_PASSWORD en las variables de entorno.")
     return usuario, contrasena
 
 
 def codigos_a_consultar(cps_argumentos=None):
     catalogo = obtener_codigos_postales()
-
-    # Si se pasan CP por terminal, tienen prioridad
     if cps_argumentos:
-        cps = list(dict.fromkeys(cps_argumentos))  # Elimina duplicados
-
+        cps = list(dict.fromkeys(cps_argumentos))
         cps_invalidos = [cp for cp in cps if cp not in catalogo]
         if cps_invalidos:
             raise ValueError(f"CP no válidos: {cps_invalidos}")
-
         return cps
-
-    # Comportamiento actual si no se pasan argumentos
     if EJECUTAR_TODOS_LOS_CP:
         return catalogo
-
     if CP_PRUEBA not in catalogo:
         raise ValueError(f"El CP de prueba {CP_PRUEBA!r} no existe en el catálogo.")
-
     return [CP_PRUEBA]
 
 
@@ -67,17 +59,14 @@ def extraer_tabla(page, metrica):
     """Extrae los datos priorizando estimaciones cuando existan."""
     registros = []
     page.wait_for_selector("table", timeout=5_000)
-
     for fila in page.locator("table tbody tr").all():
         datos = {c.get_attribute("data-label"): c.inner_text().strip() for c in fila.locator("td").all()}
         periodo = datos.get("Periodo")
         if not periodo:
             continue
-
         valor = datos.get("Estimación (€ / m²)", datos.get("Precio (€ / m²)", next((v for k, v in datos.items() if k != "Periodo"), None)))
         valor = None if valor is None or valor.upper() in {"N/A", "NA", "-", ""} else valor
         registros.append({"Métrica": metrica, "Periodo": periodo, "Valor": valor})
-
     if not registros:
         raise RuntimeError(f"La tabla de {metrica} no contiene registros.")
     return registros
@@ -97,9 +86,7 @@ def validar_metricas(registros):
     esperadas = {"Precio (€/m²)", "Compraventas", "Importe medio (€)"}
     encontradas = {registro["Métrica"] for registro in registros}
     if encontradas != esperadas:
-        raise RuntimeError(
-            "Extracción incompleta. Métricas encontradas: " + ", ".join(sorted(encontradas))
-        )
+        raise RuntimeError("Extracción incompleta. Métricas encontradas: " + ", ".join(sorted(encontradas)))
 
 
 def guardar_excel(cp, fecha_hoy, registros):
@@ -190,6 +177,9 @@ def run(playwright: Playwright) -> None:
         for cp in codigos:
             print(f"\n--- Procesando CP: {cp} ---")
             consultar_cp(page, cp, fecha_hoy)
+
+        print("\n--- Actualizando datos_resumen ---")
+        procesar_datos()
     finally:
         browser.close()
 

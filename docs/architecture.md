@@ -9,13 +9,14 @@ Su finalidad es facilitar el mantenimiento del proyecto y permitir que cualquier
 
 ## 2. Arquitectura general
 
-ScraperPEN utiliza una arquitectura sencilla basada en tres módulos Python con responsabilidades diferenciadas.
+ScraperPEN utiliza una arquitectura sencilla basada en cuatro módulos Python con responsabilidades diferenciadas.
 
 | Componente         | Responsabilidad                                                             |
 | ------------------ | --------------------------------------------------------------------------- |
 | ScraperPEN.py      | Automatización de la navegación, descarga y extracción de estadísticas. |
 | DatabaseManager.py | Acceso a SQLite, normalización y almacenamiento de información.           |
 | CreateDatabase.py  | Creación e inicialización de la estructura de la base de datos.           |
+| ProcessData.py     | Transformación de `datos_crudos` a `datos_resumen` para el análisis.       |
 
 El sistema utiliza:
 
@@ -45,7 +46,8 @@ ScraperPEN/
 ├── src/
 │   ├── ScraperPEN.py
 │   ├── CreateDatabase.py
-│   └── DatabaseManager.py
+│   ├── DatabaseManager.py
+│   └── ProcessData.py
 │
 ├── tests/
 │
@@ -63,7 +65,7 @@ ScraperPEN/
 
 ### 3.1. `src/`
 
-Contiene exclusivamente los tres módulos principales del proyecto.
+Contiene los cuatro módulos principales del proyecto.
 
 ### 3.2. `data/`
 
@@ -148,6 +150,21 @@ También define las restricciones de integridad y los índices correspondientes.
 
 Este módulo está destinado a la preparación de la estructura de la base de datos, no a la ejecución habitual de las consultas al portal.
 
+### 4.4. ProcessData.py
+
+Se encarga de preparar los datos para su análisis mediante la tabla `datos_resumen`.
+
+Sus responsabilidades son:
+
+- Leer `cp`, `periodo`, `metrica` y `valor` de `datos_crudos`.
+- Pivotar las métricas para convertirlas en las columnas `precio_m2`, `compraventas` e `importe_medio`.
+- Mantener una fila por combinación `(cp, periodo)`.
+- Crear `datos_resumen` si no existe y realizar UPSERT de los registros.
+- Conservar los valores no disponibles como `NULL`.
+- No modificar ni eliminar registros de `datos_crudos`.
+
+Puede ejecutarse independientemente con `python -m src.ProcessData`. El scraper también lo invoca una vez al terminar el bucle de códigos postales.
+
 ## 5. Flujo general de ejecución
 
 El proceso habitual sigue esta secuencia:
@@ -212,6 +229,12 @@ sin_datos_cp                    |
           Siguiente CP
                 |
                 v
+       ¿Quedan códigos CP?
+                |
+                v
+       ProcessData.py
+                |
+                v
                FIN
 ```
 
@@ -240,7 +263,11 @@ La clave única es:
 
 Si una observación ya existe, se actualiza cuando corresponde.
 
-### 6.3. Registro de consultas
+### 6.3. Datos transformados
+
+`ProcessData.py` genera `datos_resumen`, con una fila por `(cp, periodo)` y las columnas `precio_m2`, `compraventas` e `importe_medio`. La tabla es una representación derivada de `datos_crudos`; los valores ausentes se conservan como `NULL`. La transformación utiliza UPSERT y no modifica la tabla original.
+
+### 6.4. Registro de consultas
 
 Cada intento de consulta genera una entrada independiente en `log_descargas`.
 
@@ -292,7 +319,7 @@ Las pruebas deben evitar modificaciones accidentales de la base de datos de prod
 
 La arquitectura de ScraperPEN debe respetar los siguientes principios:
 
-1. Mantener los tres módulos principales y sus responsabilidades actuales.
+1. Mantener los cuatro módulos principales y sus responsabilidades actuales.
 2. Evitar duplicar operaciones de acceso a SQLite.
 3. Mantener separada la automatización del portal y el almacenamiento.
 4. Conservar los archivos originales descargados.

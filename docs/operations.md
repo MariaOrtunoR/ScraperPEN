@@ -138,6 +138,7 @@ Antes de ejecutar el scraper se debe comprobar que:
 - La tabla `codigos_postales` está creada.
 - El catálogo contiene los códigos postales que se desean consultar.
 - Existe la tabla `datos_crudos`.
+- Existe la tabla `datos_resumen`.
 - Las relaciones entre las tablas son correctas.
 
 ### 6.1. Inicializar una base de datos nueva
@@ -148,7 +149,7 @@ Si se necesita crear una base nueva, el módulo disponible es:
 python -m src.CreateDatabase
 ```
 
-Este procedimiento crea las tablas y el índice mediante instrucciones `IF NOT EXISTS`.
+Este procedimiento crea las tablas `codigos_postales`, `datos_crudos`, `datos_resumen`, `log_descargas` y el índice mediante instrucciones `IF NOT EXISTS`. Si `datos_resumen` no existe, la crea; si ya existe, no la sustituye ni altera sus datos.
 
 **Importante:** crear el esquema no importa automáticamente el catálogo de códigos postales. La carga del catálogo debe realizarse por el procedimiento correspondiente y comprobarse antes de ejecutar el scraper.
 
@@ -237,6 +238,8 @@ Para cada código postal, el scraper realiza las siguientes operaciones:
 9. Genera un Excel.
 10. Inserta o actualiza los registros en SQLite.
 11. Registra el resultado de la descarga.
+
+Cuando termina el bucle de códigos postales, `ScraperPEN.py` ejecuta una sola vez `procesar_datos()` para actualizar `datos_resumen` a partir de todos los registros existentes en `datos_crudos`. Esto también sucede en ejecuciones de un único CP.
 
 ## 9. Archivos generados
 
@@ -346,6 +349,47 @@ ORDER BY fecha_descarga DESC;
 
 Comprobar que el estado registrado coincide con el resultado observado durante la ejecución.
 
+### 11.4. Tabla `datos_resumen`
+
+Después de la ejecución del scraper, comprobar la tabla transformada:
+
+```sql
+SELECT *
+FROM datos_resumen
+WHERE cp = '29001'
+ORDER BY periodo DESC;
+```
+
+Comprobar los recuentos:
+
+```sql
+SELECT COUNT(*) FROM datos_crudos;
+SELECT COUNT(*) FROM datos_resumen;
+```
+
+Comprobar los valores ausentes por métrica:
+
+```sql
+SELECT
+    COUNT(*),
+    SUM(precio_m2 IS NULL),
+    SUM(compraventas IS NULL),
+    SUM(importe_medio IS NULL)
+FROM datos_resumen;
+```
+
+Los valores `NULL` representan métricas no disponibles; no deben interpretarse como cero.
+
+### 11.5. Ejecutar la transformación de forma independiente
+
+Desde la raíz del proyecto y con el entorno virtual activado:
+
+```powershell
+python -m src.ProcessData
+```
+
+El módulo lee todos los registros de `datos_crudos`, pivota las tres métricas y actualiza `datos_resumen` mediante UPSERT. No modifica `datos_crudos`. Puede ejecutarse repetidamente para volver a sincronizar la tabla derivada.
+
 ## 12. Comprobaciones de integridad de SQLite
 
 Para revisar la integridad interna:
@@ -373,6 +417,7 @@ Para comprobar el número de registros:
 ```sql
 SELECT COUNT(*) FROM codigos_postales;
 SELECT COUNT(*) FROM datos_crudos;
+SELECT COUNT(*) FROM datos_resumen;
 SELECT COUNT(*) FROM log_descargas;
 ```
 

@@ -7,10 +7,11 @@ Este documento describe los campos y valores almacenados en la base de datos SQL
 
 Su finalidad es establecer un vocabulario común para interpretar los datos, facilitar su mantenimiento y servir de referencia para futuros procesos de análisis.
 
-La base de datos contiene tres tablas:
+La base de datos contiene cuatro tablas:
 
 - `codigos_postales`
 - `datos_crudos`
+- `datos_resumen`
 - `log_descargas`
 
 ## 2. Convenciones generales
@@ -156,7 +157,39 @@ Por ejemplo, para el CP `29001`, el periodo `2025-03` y la métrica `precio_m2` 
 
 Cuando se recibe una nueva consulta para esa misma combinación, se actualiza el registro existente si cambia el valor.
 
-## 6. Tabla `log_descargas`
+## 6. Tabla `datos_resumen`
+
+Contiene una representación transformada de `datos_crudos`, con una fila por código postal y periodo. La columna `metrica` deja de existir en esta tabla porque sus tres valores posibles se convierten en columnas.
+
+| Campo | Tipo | Obligatorio | Descripción |
+|---|---|---|---|
+| `cp` | TEXT | Sí | Código postal; parte de la clave primaria compuesta y clave foránea a `codigos_postales.cp` |
+| `periodo` | TEXT | Sí | Periodo estadístico (`AAAA-MM`); parte de la clave primaria compuesta |
+| `precio_m2` | NUMERIC | No | Precio por metro cuadrado |
+| `compraventas` | NUMERIC | No | Número de compraventas |
+| `importe_medio` | NUMERIC | No | Importe medio en euros |
+
+### Clave primaria y relación
+
+La clave primaria compuesta es `(cp, periodo)`. La columna `cp` referencia `codigos_postales(cp)`.
+
+### Transformación
+
+`src/ProcessData.py` lee `cp`, `periodo`, `metrica` y `valor` de `datos_crudos`, pivota las métricas y guarda el resultado en `datos_resumen` mediante UPSERT.
+
+La correspondencia es:
+
+| `metrica` en `datos_crudos` | Columna en `datos_resumen` |
+|---|---|
+| `precio_m2` | `precio_m2` |
+| `compraventas` | `compraventas` |
+| `importe_medio` | `importe_medio` |
+
+Cuando una métrica no tiene valor para un periodo, la columna correspondiente queda como `NULL`. Los `NULL` no se sustituyen por cero: indican que el valor no está disponible.
+
+`datos_resumen` es una tabla derivada. `datos_crudos` sigue siendo la fuente original y no se modifica durante el proceso.
+
+## 7. Tabla `log_descargas`
 
 Registra los intentos de consulta realizados por el scraper.
 
@@ -237,7 +270,7 @@ Campo de texto opcional para conservar información adicional.
 
 Puede contener el mensaje mostrado por el portal o una descripción del error producido durante la consulta.
 
-## 7. Catálogo de métricas
+## 8. Catálogo de métricas
 
 Las tres métricas almacenadas en `datos_crudos` son:
 
@@ -249,7 +282,7 @@ Las tres métricas almacenadas en `datos_crudos` son:
 
 Los nombres descriptivos facilitan la interpretación de los datos, mientras que los identificadores normalizados permiten mantener una estructura homogénea en SQLite.
 
-## 8. Diferencia entre fecha de consulta y periodo estadístico
+## 9. Diferencia entre fecha de consulta y periodo estadístico
 
 Es importante distinguir estos dos conceptos:
 
@@ -267,7 +300,7 @@ periodo        = 2025-03
 
 Ambos campos cumplen funciones diferentes y no deben confundirse.
 
-## 9. Reglas de interpretación
+## 10. Reglas de interpretación
 
 Para trabajar correctamente con los datos se deben respetar las siguientes reglas:
 
@@ -280,14 +313,15 @@ Para trabajar correctamente con los datos se deben respetar las siguientes regla
 7. La fecha de consulta no sustituye al periodo estadístico.
 8. Los registros de `log_descargas` representan intentos individuales y no deben interpretarse como observaciones estadísticas.
 
-## 10. Consideraciones para futuros análisis
+## 11. Consideraciones para futuros análisis
 
 Al preparar consultas, informes o modelos estadísticos:
 
 - Utilizar `cp` para identificar el ámbito geográfico.
 - Utilizar `periodo` para ordenar y comparar la evolución temporal.
 - Utilizar `metrica` para seleccionar el indicador.
-- Utilizar `valor` como dato cuantitativo.
+- Utilizar `valor` como dato cuantitativo en `datos_crudos`.
+- Utilizar las columnas de métricas de `datos_resumen` para análisis en formato ancho.
 - Utilizar `fecha_consulta` para conocer cuándo se obtuvo la información.
 - Consultar `log_descargas` para analizar la disponibilidad y el resultado de las consultas.
 

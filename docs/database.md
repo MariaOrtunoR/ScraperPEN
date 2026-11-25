@@ -25,11 +25,12 @@ La ruta se define en `DatabaseManager.py` a partir de la ubicación del proyecto
 
 ## 3. Estructura general
 
-La base de datos contiene tres tablas principales:
+La base de datos contiene cuatro tablas:
 
 1. `codigos_postales`
 2. `datos_crudos`
-3. `log_descargas`
+3. `datos_resumen`
+4. `log_descargas`
 
 Sus relaciones son las siguientes:
 
@@ -40,6 +41,13 @@ codigos_postales
        |
        | N
 datos_crudos
+
+codigos_postales
+       |
+       | 1
+       |
+       | N
+datos_resumen
 
 codigos_postales
        |
@@ -120,7 +128,25 @@ Cuando el portal muestra datos provinciales en sustitución de los datos especí
 
 La validez de cada consulta se registra en `log_descargas`.
 
-## 6. Tabla `log_descargas`
+## 6. Tabla `datos_resumen`
+
+Contiene los datos de `datos_crudos` transformados a formato ancho. Cada fila representa una combinación única de código postal y periodo.
+
+| Campo | Tipo | Restricciones | Descripción |
+|---|---|---|---|
+| `cp` | TEXT | NOT NULL, PRIMARY KEY (compuesta), FOREIGN KEY | Código postal |
+| `periodo` | TEXT | NOT NULL, PRIMARY KEY (compuesta) | Periodo estadístico (`AAAA-MM`) |
+| `precio_m2` | NUMERIC | — | Precio por metro cuadrado |
+| `compraventas` | NUMERIC | — | Número de compraventas |
+| `importe_medio` | NUMERIC | — | Importe medio en euros |
+
+La clave primaria compuesta es `(cp, periodo)`. `cp` referencia `codigos_postales(cp)`.
+
+`ProcessData.py` obtiene los registros de `datos_crudos`, pivota `metrica` para convertir sus tres valores admitidos en columnas y realiza UPSERT sobre `datos_resumen`. Los valores no disponibles se conservan como `NULL`. La tabla es derivada: `datos_crudos` continúa siendo la fuente original y no se modifica durante la transformación.
+
+La tabla se crea desde `CreateDatabase.py` mediante `CREATE TABLE IF NOT EXISTS`. La transformación se puede ejecutar con `python -m src.ProcessData` y también se ejecuta al final del scraper.
+
+## 7. Tabla `log_descargas`
 
 Registra los intentos de consulta realizados por el scraper.
 
@@ -173,7 +199,7 @@ Se crea sobre las columnas:
 
 Facilita las consultas del historial de descargas filtradas por código postal y fecha.
 
-## 7. Relaciones e integridad referencial
+## 8. Relaciones e integridad referencial
 
 Las tablas `datos_crudos` y `log_descargas` contienen una clave foránea hacia:
 
@@ -191,13 +217,13 @@ PRAGMA foreign_keys = ON;
 
 Esta instrucción debe mantenerse activa en todas las conexiones utilizadas por el proyecto.
 
-## 8. Módulos que gestionan la base de datos
+## 9. Módulos que gestionan la base de datos
 
 ### `CreateDatabase.py`
 
 Responsable de inicializar el esquema de la base de datos.
 
-Crea las tablas y el índice mediante `CREATE TABLE IF NOT EXISTS` y `CREATE INDEX IF NOT EXISTS`.
+Crea las tablas `codigos_postales`, `datos_crudos`, `datos_resumen`, `log_descargas` y el índice mediante `CREATE TABLE IF NOT EXISTS` y `CREATE INDEX IF NOT EXISTS`.
 
 No importa automáticamente el catálogo de códigos postales ni modifica las tablas que ya existen.
 
@@ -215,7 +241,11 @@ Sus principales responsabilidades son:
 - Registrar los intentos de descarga.
 - Recuperar el catálogo de códigos postales.
 
-## 9. Reglas de mantenimiento
+### `ProcessData.py`
+
+Lee `datos_crudos`, pivota las tres métricas a columnas y actualiza `datos_resumen` mediante UPSERT. No modifica la tabla original.
+
+## 10. Reglas de mantenimiento
 
 Cualquier modificación futura de la base de datos debe respetar estas reglas:
 
@@ -229,7 +259,7 @@ Cualquier modificación futura de la base de datos debe respetar estas reglas:
 8. Realizar una copia de seguridad antes de cualquier modificación estructural.
 9. Comprobar la integridad de SQLite después de las operaciones de mantenimiento.
 
-## 10. Comprobaciones de integridad
+## 11. Comprobaciones de integridad
 
 SQLite permite realizar comprobaciones mediante las siguientes instrucciones:
 
@@ -258,12 +288,13 @@ Para consultar el número de registros de cada tabla:
 ```sql
 SELECT COUNT(*) FROM codigos_postales;
 SELECT COUNT(*) FROM datos_crudos;
+SELECT COUNT(*) FROM datos_resumen;
 SELECT COUNT(*) FROM log_descargas;
 ```
 
 Los recuentos pueden variar a medida que se incorporen nuevos datos y se ejecuten nuevas consultas.
 
-## 11. Copias de seguridad
+## 12. Copias de seguridad
 
 Antes de realizar cambios en el esquema o tareas de mantenimiento que puedan afectar a los datos, debe crearse una copia de seguridad de:
 

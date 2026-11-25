@@ -1,3 +1,4 @@
+
 """Inicialización explícita del esquema SQLite para una base nueva."""
 
 from src.DatabaseManager import DB_PATH, obtener_conexion, validar_esquema_principal
@@ -12,6 +13,7 @@ def create_database():
                 municipio TEXT NOT NULL
             );
         """)
+
         connection.execute("""
             CREATE TABLE IF NOT EXISTS datos_crudos (
                 fecha_consulta TEXT NOT NULL,
@@ -26,6 +28,20 @@ def create_database():
                     FOREIGN KEY (cp) REFERENCES codigos_postales(cp)
             );
         """)
+
+        connection.execute("""
+            CREATE TABLE IF NOT EXISTS datos_resumen (
+                cp TEXT NOT NULL,
+                periodo TEXT NOT NULL,
+                precio_m2 NUMERIC,
+                compraventas NUMERIC,
+                importe_medio NUMERIC,
+                CONSTRAINT pk_datos_resumen PRIMARY KEY (cp, periodo),
+                CONSTRAINT fk_datos_resumen_cp
+                    FOREIGN KEY (cp) REFERENCES codigos_postales(cp)
+            );
+        """)
+
         connection.execute("""
             CREATE TABLE IF NOT EXISTS log_descargas (
                 id INTEGER PRIMARY KEY,
@@ -40,8 +56,14 @@ def create_database():
                     FOREIGN KEY (cp) REFERENCES codigos_postales(cp)
             );
         """)
-        connection.execute("CREATE INDEX IF NOT EXISTS idx_log_descargas_cp_fecha ON log_descargas (cp, fecha_descarga);")
+
+        connection.execute("""
+            CREATE INDEX IF NOT EXISTS idx_log_descargas_cp_fecha
+            ON log_descargas (cp, fecha_descarga);
+        """)
+
         validar_esquema_principal(connection)
+
     print(f"Base de datos preparada: {DB_PATH}")
 
 
