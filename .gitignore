@@ -1,21 +1,46 @@
+# Python
 __pycache__/
 *.py[cod]
-.env
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos virtuales
 .venv/
 venv/
+env/
 
-# Datos locales regenerables o con historial de consultas.
-data/database/*.db
-data/raw/excel/*.xlsx
-data/raw/pdf/*.pdf
-data/processed/*.xlsx
+# Configuración local y credenciales
+.env
+.env.*
+!.env.example
 
-# Documentación interna del proyecto (no publicar en GitHub)
+# Bases de datos y copias de seguridad locales
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite-journal
+*.bak
+
+# Datos de trabajo y descargas locales
+data/database/
+data/raw/
+data/processed/
+
+# Registros y archivos temporales
+*.log
+*.tmp
+
+# Documentación interna (se mantiene en el equipo, no en el repositorio público)
 AGENTS.md
 ROADMAP.md
 SEGUIMIENTO_PROYECTO.md
 
-# Recursos locales de referencia (no publicar en GitHub)
-resources/MALAGA.geojson
-resources/Metodologia PIN CTNotariado.pdf
-resources/evolucionpreciovivienda.xlsx
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

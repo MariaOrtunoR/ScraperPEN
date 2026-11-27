@@ -1,0 +1,8232 @@
+{
+  "fecha_exportacion": "2026-11-27T17:15:12+01:00",
+  "total_registros": 914,
+  "datos": [
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 914,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2021,
+      "compraventas": 12,
+      "importe_medio": 136250
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2091,
+      "compraventas": 18,
+      "importe_medio": 247958
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1473,
+      "compraventas": 16,
+      "importe_medio": 144553
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1481,
+      "compraventas": 27,
+      "importe_medio": 150846
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2711,
+      "compraventas": 44,
+      "importe_medio": 396684
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2814,
+      "compraventas": 31,
+      "importe_medio": 304917
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3203,
+      "compraventas": 86,
+      "importe_medio": 224075
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2690,
+      "compraventas": 27,
+      "importe_medio": 281239
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 690,
+      "compraventas": 6,
+      "importe_medio": 81000
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3014,
+      "compraventas": 33,
+      "importe_medio": 350619
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1642,
+      "compraventas": 10,
+      "importe_medio": 172710
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1673,
+      "compraventas": 7,
+      "importe_medio": 176143
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2837,
+      "compraventas": 113,
+      "importe_medio": 346114
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2330,
+      "compraventas": 36,
+      "importe_medio": 325817
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2883,
+      "compraventas": 15,
+      "importe_medio": 224853
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2547,
+      "compraventas": 19,
+      "importe_medio": 327850
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3221,
+      "compraventas": 133,
+      "importe_medio": 294728
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2152,
+      "compraventas": 44,
+      "importe_medio": 238668
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1904,
+      "compraventas": 21,
+      "importe_medio": 204350
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3859,
+      "compraventas": 47,
+      "importe_medio": 402471
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 4511,
+      "compraventas": 48,
+      "importe_medio": 628139
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 4903,
+      "compraventas": 25,
+      "importe_medio": 733038
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3013,
+      "compraventas": 35,
+      "importe_medio": 383097
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 4942,
+      "compraventas": 71,
+      "importe_medio": 723533
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3062,
+      "compraventas": 36,
+      "importe_medio": 379253
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2843,
+      "compraventas": 133,
+      "importe_medio": 318037
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2743,
+      "compraventas": 27,
+      "importe_medio": 323168
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2310,
+      "compraventas": 51,
+      "importe_medio": 232493
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2759,
+      "compraventas": 11,
+      "importe_medio": 240000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3696,
+      "compraventas": 26,
+      "importe_medio": 301663
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1937,
+      "compraventas": null,
+      "importe_medio": 220233
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3381,
+      "compraventas": 48,
+      "importe_medio": 312863
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2553,
+      "compraventas": 27,
+      "importe_medio": 214760
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2516,
+      "compraventas": 36,
+      "importe_medio": 208093
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 4866,
+      "compraventas": 6,
+      "importe_medio": 519833
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3001,
+      "compraventas": 25,
+      "importe_medio": 219348
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2663,
+      "compraventas": 41,
+      "importe_medio": 253478
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1940,
+      "compraventas": 52,
+      "importe_medio": 157462
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3656,
+      "compraventas": 10,
+      "importe_medio": 279330
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3419,
+      "compraventas": 19,
+      "importe_medio": 236494
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2333,
+      "compraventas": 25,
+      "importe_medio": 160436
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 5840,
+      "compraventas": 9,
+      "importe_medio": 804685
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 4451,
+      "compraventas": 12,
+      "importe_medio": 434177
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3503,
+      "compraventas": 14,
+      "importe_medio": 340125
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2871,
+      "compraventas": 5,
+      "importe_medio": 244000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1868,
+      "compraventas": 9,
+      "importe_medio": 254286
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3732,
+      "compraventas": 19,
+      "importe_medio": 242395
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2231,
+      "compraventas": 4,
+      "importe_medio": 313500
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2136,
+      "compraventas": 16,
+      "importe_medio": 212993
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 3464,
+      "compraventas": 24,
+      "importe_medio": 304863
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2431,
+      "compraventas": 21,
+      "importe_medio": 247632
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 892,
+      "compraventas": 32,
+      "importe_medio": 101262
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2388,
+      "compraventas": 10,
+      "importe_medio": 204283
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2696,
+      "compraventas": 35,
+      "importe_medio": 192783
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2554,
+      "compraventas": 20,
+      "importe_medio": 202037
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 2282,
+      "compraventas": 5,
+      "importe_medio": 168400
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-06",
+      "precio_m2": 1324,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 272,
+      "compraventas": 16,
+      "importe_medio": 38656
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2624,
+      "compraventas": 11,
+      "importe_medio": 172400
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1854,
+      "compraventas": 17,
+      "importe_medio": 280733
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1754,
+      "compraventas": 16,
+      "importe_medio": 177338
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1345,
+      "compraventas": 33,
+      "importe_medio": 133106
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3649,
+      "compraventas": 41,
+      "importe_medio": 696038
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2705,
+      "compraventas": 32,
+      "importe_medio": 284792
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3001,
+      "compraventas": 76,
+      "importe_medio": 229432
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2769,
+      "compraventas": 35,
+      "importe_medio": 278127
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 976,
+      "compraventas": 13,
+      "importe_medio": 88333
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2222,
+      "compraventas": 35,
+      "importe_medio": 250403
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1602,
+      "compraventas": 12,
+      "importe_medio": 142583
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2129,
+      "compraventas": 6,
+      "importe_medio": 179517
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3125,
+      "compraventas": 113,
+      "importe_medio": 334676
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2726,
+      "compraventas": 43,
+      "importe_medio": 370421
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2773,
+      "compraventas": 34,
+      "importe_medio": 301991
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2146,
+      "compraventas": 18,
+      "importe_medio": 250679
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3311,
+      "compraventas": 124,
+      "importe_medio": 320124
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1886,
+      "compraventas": 43,
+      "importe_medio": 220373
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2217,
+      "compraventas": 18,
+      "importe_medio": 238118
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 5014,
+      "compraventas": 64,
+      "importe_medio": 600386
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 5293,
+      "compraventas": 41,
+      "importe_medio": 725661
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3090,
+      "compraventas": 23,
+      "importe_medio": 518003
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 4172,
+      "compraventas": 28,
+      "importe_medio": 585881
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3805,
+      "compraventas": 65,
+      "importe_medio": 446878
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3627,
+      "compraventas": 33,
+      "importe_medio": 462543
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2833,
+      "compraventas": 94,
+      "importe_medio": 320400
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2665,
+      "compraventas": 45,
+      "importe_medio": 354995
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2208,
+      "compraventas": 54,
+      "importe_medio": 202565
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2314,
+      "compraventas": 10,
+      "importe_medio": 227714
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3602,
+      "compraventas": 24,
+      "importe_medio": 284905
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1956,
+      "compraventas": null,
+      "importe_medio": 223271
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3119,
+      "compraventas": 44,
+      "importe_medio": 256398
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2637,
+      "compraventas": 33,
+      "importe_medio": 219808
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2646,
+      "compraventas": 36,
+      "importe_medio": 222590
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3769,
+      "compraventas": 6,
+      "importe_medio": 402000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2864,
+      "compraventas": 13,
+      "importe_medio": 211667
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2396,
+      "compraventas": 50,
+      "importe_medio": 228460
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1879,
+      "compraventas": 54,
+      "importe_medio": 138771
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 4034,
+      "compraventas": 16,
+      "importe_medio": 356173
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2793,
+      "compraventas": 14,
+      "importe_medio": 231215
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2191,
+      "compraventas": 50,
+      "importe_medio": 152044
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 5468,
+      "compraventas": 10,
+      "importe_medio": 578389
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 4402,
+      "compraventas": 15,
+      "importe_medio": 479833
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2963,
+      "compraventas": 9,
+      "importe_medio": 332664
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2664,
+      "compraventas": 8,
+      "importe_medio": 259375
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2311,
+      "compraventas": 15,
+      "importe_medio": 322584
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3404,
+      "compraventas": 25,
+      "importe_medio": 216795
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2062,
+      "compraventas": 8,
+      "importe_medio": 298250
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2913,
+      "compraventas": 10,
+      "importe_medio": 273775
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2965,
+      "compraventas": 21,
+      "importe_medio": 262098
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3334,
+      "compraventas": 11,
+      "importe_medio": 283389
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 999,
+      "compraventas": 27,
+      "importe_medio": 102175
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1854,
+      "compraventas": 7,
+      "importe_medio": 169214
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 3009,
+      "compraventas": 27,
+      "importe_medio": 176278
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2236,
+      "compraventas": 25,
+      "importe_medio": 205773
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 2369,
+      "compraventas": 4,
+      "importe_medio": 260000
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-07",
+      "precio_m2": 1324,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 914,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2517,
+      "compraventas": 7,
+      "importe_medio": 163583
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1839,
+      "compraventas": 11,
+      "importe_medio": 280738
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1173,
+      "compraventas": 8,
+      "importe_medio": 194025
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1608,
+      "compraventas": 12,
+      "importe_medio": 131273
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2609,
+      "compraventas": 22,
+      "importe_medio": 347140
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3155,
+      "compraventas": 19,
+      "importe_medio": 331611
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2926,
+      "compraventas": 56,
+      "importe_medio": 234587
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3650,
+      "compraventas": 16,
+      "importe_medio": 290209
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 864,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2301,
+      "compraventas": 22,
+      "importe_medio": 267556
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1738,
+      "compraventas": 7,
+      "importe_medio": 183667
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1463,
+      "compraventas": 6,
+      "importe_medio": 171667
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3277,
+      "compraventas": 86,
+      "importe_medio": 344538
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2844,
+      "compraventas": 36,
+      "importe_medio": 414865
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3533,
+      "compraventas": 11,
+      "importe_medio": 566000
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1505,
+      "compraventas": 9,
+      "importe_medio": 182125
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3057,
+      "compraventas": 68,
+      "importe_medio": 285823
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2210,
+      "compraventas": 28,
+      "importe_medio": 235809
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2592,
+      "compraventas": 21,
+      "importe_medio": 215848
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 4881,
+      "compraventas": 22,
+      "importe_medio": 657147
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 5674,
+      "compraventas": 39,
+      "importe_medio": 729862
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3024,
+      "compraventas": 15,
+      "importe_medio": 282222
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3109,
+      "compraventas": 31,
+      "importe_medio": 329917
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3989,
+      "compraventas": 33,
+      "importe_medio": 573227
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3188,
+      "compraventas": 14,
+      "importe_medio": 290096
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2782,
+      "compraventas": 79,
+      "importe_medio": 361623
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2721,
+      "compraventas": 20,
+      "importe_medio": 347026
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2457,
+      "compraventas": 32,
+      "importe_medio": 228279
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 4363,
+      "compraventas": 7,
+      "importe_medio": 450000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3407,
+      "compraventas": 17,
+      "importe_medio": 294538
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1733,
+      "compraventas": null,
+      "importe_medio": 197761
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3042,
+      "compraventas": 18,
+      "importe_medio": 282365
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2616,
+      "compraventas": 32,
+      "importe_medio": 203113
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2619,
+      "compraventas": 19,
+      "importe_medio": 203974
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 4679,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2889,
+      "compraventas": 14,
+      "importe_medio": 220186
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2554,
+      "compraventas": 41,
+      "importe_medio": 230718
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1829,
+      "compraventas": 21,
+      "importe_medio": 140918
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3830,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2916,
+      "compraventas": 12,
+      "importe_medio": 230611
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2008,
+      "compraventas": 22,
+      "importe_medio": 158873
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 4438,
+      "compraventas": 5,
+      "importe_medio": 490000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2852,
+      "compraventas": 7,
+      "importe_medio": 238714
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3307,
+      "compraventas": 9,
+      "importe_medio": 392250
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2787,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3806,
+      "compraventas": 6,
+      "importe_medio": 333400
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 3986,
+      "compraventas": 12,
+      "importe_medio": 291727
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2365,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2523,
+      "compraventas": 9,
+      "importe_medio": 234111
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2853,
+      "compraventas": 16,
+      "importe_medio": 333171
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2518,
+      "compraventas": 5,
+      "importe_medio": 281000
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1376,
+      "compraventas": 26,
+      "importe_medio": 121176
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2441,
+      "compraventas": 8,
+      "importe_medio": 184875
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2507,
+      "compraventas": 16,
+      "importe_medio": 205875
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2436,
+      "compraventas": 14,
+      "importe_medio": 188731
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 2530,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-08",
+      "precio_m2": 1324,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 275,
+      "compraventas": 50,
+      "importe_medio": 25354
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1613,
+      "compraventas": 10,
+      "importe_medio": 160969
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2033,
+      "compraventas": 12,
+      "importe_medio": 219800
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2183,
+      "compraventas": 16,
+      "importe_medio": 194486
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1297,
+      "compraventas": 23,
+      "importe_medio": 132544
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3681,
+      "compraventas": 44,
+      "importe_medio": 626125
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3047,
+      "compraventas": 22,
+      "importe_medio": 303303
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3244,
+      "compraventas": 69,
+      "importe_medio": 206496
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3330,
+      "compraventas": 29,
+      "importe_medio": 341067
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 975,
+      "compraventas": 7,
+      "importe_medio": 88273
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2181,
+      "compraventas": 33,
+      "importe_medio": 242843
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1924,
+      "compraventas": 13,
+      "importe_medio": 155372
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2140,
+      "compraventas": 4,
+      "importe_medio": 214005
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2052,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2966,
+      "compraventas": 108,
+      "importe_medio": 320042
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2258,
+      "compraventas": 29,
+      "importe_medio": 384815
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3461,
+      "compraventas": 20,
+      "importe_medio": 421498
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1871,
+      "compraventas": 19,
+      "importe_medio": 353038
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3202,
+      "compraventas": 113,
+      "importe_medio": 313391
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2574,
+      "compraventas": 37,
+      "importe_medio": 289410
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2492,
+      "compraventas": 26,
+      "importe_medio": 189145
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 4569,
+      "compraventas": 30,
+      "importe_medio": 554485
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 6829,
+      "compraventas": 55,
+      "importe_medio": 844647
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3151,
+      "compraventas": 29,
+      "importe_medio": 391896
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3252,
+      "compraventas": 48,
+      "importe_medio": 402891
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 4830,
+      "compraventas": 67,
+      "importe_medio": 695069
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3406,
+      "compraventas": 33,
+      "importe_medio": 555962
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3314,
+      "compraventas": 99,
+      "importe_medio": 363127
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2381,
+      "compraventas": 38,
+      "importe_medio": 274671
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2363,
+      "compraventas": 44,
+      "importe_medio": 219086
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3688,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3252,
+      "compraventas": 26,
+      "importe_medio": 294542
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2546,
+      "compraventas": 25,
+      "importe_medio": 185201
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3394,
+      "compraventas": 27,
+      "importe_medio": 350042
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2445,
+      "compraventas": 26,
+      "importe_medio": 204359
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2778,
+      "compraventas": 30,
+      "importe_medio": 202234
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3733,
+      "compraventas": 8,
+      "importe_medio": 340256
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3210,
+      "compraventas": 23,
+      "importe_medio": 236409
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2412,
+      "compraventas": 53,
+      "importe_medio": 236636
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2043,
+      "compraventas": 30,
+      "importe_medio": 156514
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3095,
+      "compraventas": 11,
+      "importe_medio": 209433
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3042,
+      "compraventas": 13,
+      "importe_medio": 261045
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2310,
+      "compraventas": 19,
+      "importe_medio": 206989
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 5846,
+      "compraventas": 15,
+      "importe_medio": 667200
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3374,
+      "compraventas": 7,
+      "importe_medio": 438571
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3129,
+      "compraventas": 9,
+      "importe_medio": 384821
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2811,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2253,
+      "compraventas": 10,
+      "importe_medio": 328656
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 3802,
+      "compraventas": 24,
+      "importe_medio": 304975
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2505,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2984,
+      "compraventas": 10,
+      "importe_medio": 234051
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2931,
+      "compraventas": 13,
+      "importe_medio": 346583
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2734,
+      "compraventas": 13,
+      "importe_medio": 271077
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1130,
+      "compraventas": 18,
+      "importe_medio": 95771
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1034,
+      "compraventas": null,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2926,
+      "compraventas": 91,
+      "importe_medio": 246798
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2256,
+      "compraventas": 5,
+      "importe_medio": 200800
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2441,
+      "compraventas": 36,
+      "importe_medio": 196379
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1503,
+      "compraventas": 26,
+      "importe_medio": 167246
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2545,
+      "compraventas": 40,
+      "importe_medio": 205839
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 2502,
+      "compraventas": 6,
+      "importe_medio": 276500
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-09",
+      "precio_m2": 1324,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 348,
+      "compraventas": 7,
+      "importe_medio": 44286
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1948,
+      "compraventas": 6,
+      "importe_medio": 136991
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2284,
+      "compraventas": 12,
+      "importe_medio": 296727
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1442,
+      "compraventas": 9,
+      "importe_medio": 138477
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1503,
+      "compraventas": 30,
+      "importe_medio": 144074
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3924,
+      "compraventas": 50,
+      "importe_medio": 602475
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2865,
+      "compraventas": 27,
+      "importe_medio": 364083
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3053,
+      "compraventas": 96,
+      "importe_medio": 228369
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3203,
+      "compraventas": 22,
+      "importe_medio": 420529
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 671,
+      "compraventas": 6,
+      "importe_medio": 78000
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2344,
+      "compraventas": 48,
+      "importe_medio": 304848
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1496,
+      "compraventas": 21,
+      "importe_medio": 146395
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2059,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2308,
+      "compraventas": 6,
+      "importe_medio": 239983
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3501,
+      "compraventas": 89,
+      "importe_medio": 400818
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3112,
+      "compraventas": 46,
+      "importe_medio": 464834
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 4931,
+      "compraventas": 26,
+      "importe_medio": 675404
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2633,
+      "compraventas": 9,
+      "importe_medio": 471063
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3634,
+      "compraventas": 112,
+      "importe_medio": 343394
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2124,
+      "compraventas": 45,
+      "importe_medio": 223366
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2424,
+      "compraventas": 32,
+      "importe_medio": 217111
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2805,
+      "compraventas": 45,
+      "importe_medio": 268767
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 5599,
+      "compraventas": 40,
+      "importe_medio": 603904
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 4171,
+      "compraventas": 18,
+      "importe_medio": 580957
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 4059,
+      "compraventas": 32,
+      "importe_medio": 549015
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 4803,
+      "compraventas": 65,
+      "importe_medio": 673335
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3191,
+      "compraventas": 50,
+      "importe_medio": 366865
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3095,
+      "compraventas": 116,
+      "importe_medio": 350434
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2714,
+      "compraventas": 37,
+      "importe_medio": 391383
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2430,
+      "compraventas": 41,
+      "importe_medio": 208026
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3970,
+      "compraventas": 7,
+      "importe_medio": 377150
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3225,
+      "compraventas": 18,
+      "importe_medio": 296745
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2522,
+      "compraventas": 31,
+      "importe_medio": 195521
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3132,
+      "compraventas": 33,
+      "importe_medio": 294688
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2825,
+      "compraventas": 18,
+      "importe_medio": 219600
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2651,
+      "compraventas": 28,
+      "importe_medio": 258031
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3657,
+      "compraventas": 5,
+      "importe_medio": 257450
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2878,
+      "compraventas": 12,
+      "importe_medio": 235557
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3115,
+      "compraventas": 46,
+      "importe_medio": 260740
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1924,
+      "compraventas": 40,
+      "importe_medio": 150698
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3380,
+      "compraventas": 28,
+      "importe_medio": 248255
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2158,
+      "compraventas": 22,
+      "importe_medio": 217677
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2284,
+      "compraventas": 34,
+      "importe_medio": 161121
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 5022,
+      "compraventas": 13,
+      "importe_medio": 735500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3954,
+      "compraventas": 9,
+      "importe_medio": 533842
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3362,
+      "compraventas": 11,
+      "importe_medio": 521800
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2811,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2185,
+      "compraventas": 13,
+      "importe_medio": 311000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2025-10",
+      "precio_m2": 3060,
+      "compraventas": 1959,
+      "importe_medio": 319845
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3842,
+      "compraventas": 27,
+      "importe_medio": 303646
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2395,
+      "compraventas": 9,
+      "importe_medio": 376556
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2805,
+      "compraventas": 14,
+      "importe_medio": 269700
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2706,
+      "compraventas": 18,
+      "importe_medio": 265191
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2359,
+      "compraventas": 8,
+      "importe_medio": 259500
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1306,
+      "compraventas": 31,
+      "importe_medio": 126272
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1034,
+      "compraventas": null,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 3154,
+      "compraventas": 122,
+      "importe_medio": 248400
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2650,
+      "compraventas": 17,
+      "importe_medio": 251786
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2712,
+      "compraventas": 34,
+      "importe_medio": 187036
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1658,
+      "compraventas": 19,
+      "importe_medio": 164276
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2664,
+      "compraventas": 31,
+      "importe_medio": 191010
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 2497,
+      "compraventas": 4,
+      "importe_medio": 212250
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-10",
+      "precio_m2": 1477,
+      "compraventas": 8,
+      "importe_medio": 195000
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1202,
+      "compraventas": 4,
+      "importe_medio": 105500
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3086,
+      "compraventas": 11,
+      "importe_medio": 138850
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2564,
+      "compraventas": 9,
+      "importe_medio": 199331
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1554,
+      "compraventas": 12,
+      "importe_medio": 221870
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1575,
+      "compraventas": 24,
+      "importe_medio": 136657
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3973,
+      "compraventas": 35,
+      "importe_medio": 677582
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3411,
+      "compraventas": 26,
+      "importe_medio": 293052
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2936,
+      "compraventas": 77,
+      "importe_medio": 245540
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3266,
+      "compraventas": 19,
+      "importe_medio": 315760
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 864,
+      "compraventas": 4,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2774,
+      "compraventas": 36,
+      "importe_medio": 350292
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1817,
+      "compraventas": 14,
+      "importe_medio": 166146
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1781,
+      "compraventas": 5,
+      "importe_medio": 196998
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2646,
+      "compraventas": 7,
+      "importe_medio": 205983
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3290,
+      "compraventas": 105,
+      "importe_medio": 366646
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2988,
+      "compraventas": 30,
+      "importe_medio": 405378
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3162,
+      "compraventas": 19,
+      "importe_medio": 401513
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2838,
+      "compraventas": 7,
+      "importe_medio": 259167
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3261,
+      "compraventas": 122,
+      "importe_medio": 296662
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2457,
+      "compraventas": 38,
+      "importe_medio": 239703
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2593,
+      "compraventas": 27,
+      "importe_medio": 189724
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 4210,
+      "compraventas": 33,
+      "importe_medio": 427116
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 4498,
+      "compraventas": 38,
+      "importe_medio": 647000
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3357,
+      "compraventas": 26,
+      "importe_medio": 365136
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3694,
+      "compraventas": 44,
+      "importe_medio": 516636
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3760,
+      "compraventas": 46,
+      "importe_medio": 533027
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3599,
+      "compraventas": 48,
+      "importe_medio": 456345
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3273,
+      "compraventas": 108,
+      "importe_medio": 349912
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2272,
+      "compraventas": 43,
+      "importe_medio": 289664
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2410,
+      "compraventas": 42,
+      "importe_medio": 254117
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3688,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3433,
+      "compraventas": 21,
+      "importe_medio": 290780
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2408,
+      "compraventas": 25,
+      "importe_medio": 174350
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3848,
+      "compraventas": 43,
+      "importe_medio": 326868
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2488,
+      "compraventas": 29,
+      "importe_medio": 208121
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2706,
+      "compraventas": 27,
+      "importe_medio": 186224
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3443,
+      "compraventas": 5,
+      "importe_medio": 294000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2333,
+      "compraventas": 19,
+      "importe_medio": 184579
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3021,
+      "compraventas": 34,
+      "importe_medio": 275491
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2045,
+      "compraventas": 34,
+      "importe_medio": 158878
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3761,
+      "compraventas": 25,
+      "importe_medio": 243280
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3024,
+      "compraventas": 24,
+      "importe_medio": 207404
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2408,
+      "compraventas": 36,
+      "importe_medio": 187653
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 5297,
+      "compraventas": 9,
+      "importe_medio": 827556
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3205,
+      "compraventas": 9,
+      "importe_medio": 332000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2808,
+      "compraventas": 8,
+      "importe_medio": 462937
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2207,
+      "compraventas": 10,
+      "importe_medio": 209173
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2217,
+      "compraventas": 7,
+      "importe_medio": 220714
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2025-11",
+      "precio_m2": 3022,
+      "compraventas": 1836,
+      "importe_medio": 301934
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3432,
+      "compraventas": 28,
+      "importe_medio": 270579
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2447,
+      "compraventas": 4,
+      "importe_medio": 380500
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2670,
+      "compraventas": 10,
+      "importe_medio": 286000
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2993,
+      "compraventas": 23,
+      "importe_medio": 293179
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2742,
+      "compraventas": 10,
+      "importe_medio": 277204
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1265,
+      "compraventas": 28,
+      "importe_medio": 107095
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1034,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 3044,
+      "compraventas": 100,
+      "importe_medio": 219323
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2613,
+      "compraventas": 10,
+      "importe_medio": 172772
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2785,
+      "compraventas": 28,
+      "importe_medio": 202746
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1575,
+      "compraventas": 39,
+      "importe_medio": 161776
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2761,
+      "compraventas": 30,
+      "importe_medio": 198574
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 2405,
+      "compraventas": 6,
+      "importe_medio": 222483
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-11",
+      "precio_m2": 1324,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 632,
+      "compraventas": 12,
+      "importe_medio": 45250
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2915,
+      "compraventas": 6,
+      "importe_medio": 166667
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2250,
+      "compraventas": 15,
+      "importe_medio": 274203
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1479,
+      "compraventas": 17,
+      "importe_medio": 179788
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1386,
+      "compraventas": 29,
+      "importe_medio": 159944
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3040,
+      "compraventas": 47,
+      "importe_medio": 551789
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3015,
+      "compraventas": 21,
+      "importe_medio": 325329
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2968,
+      "compraventas": 83,
+      "importe_medio": 227368
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2594,
+      "compraventas": 42,
+      "importe_medio": 295203
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1092,
+      "compraventas": 7,
+      "importe_medio": 109917
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2934,
+      "compraventas": 30,
+      "importe_medio": 377245
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1644,
+      "compraventas": 14,
+      "importe_medio": 134364
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2006,
+      "compraventas": 8,
+      "importe_medio": 239409
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2052,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3291,
+      "compraventas": 107,
+      "importe_medio": 363348
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3040,
+      "compraventas": 48,
+      "importe_medio": 369262
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3892,
+      "compraventas": 19,
+      "importe_medio": 533397
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2348,
+      "compraventas": 23,
+      "importe_medio": 280063
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3549,
+      "compraventas": 121,
+      "importe_medio": 300142
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2434,
+      "compraventas": 49,
+      "importe_medio": 248480
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2122,
+      "compraventas": 26,
+      "importe_medio": 215733
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3877,
+      "compraventas": 45,
+      "importe_medio": 374337
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 6167,
+      "compraventas": 46,
+      "importe_medio": 1025121
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3985,
+      "compraventas": 25,
+      "importe_medio": 473203
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3454,
+      "compraventas": 33,
+      "importe_medio": 450228
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 5085,
+      "compraventas": 70,
+      "importe_medio": 748626
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3151,
+      "compraventas": 36,
+      "importe_medio": 413656
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3302,
+      "compraventas": 91,
+      "importe_medio": 335054
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2511,
+      "compraventas": 31,
+      "importe_medio": 335826
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2597,
+      "compraventas": 46,
+      "importe_medio": 222401
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3854,
+      "compraventas": 8,
+      "importe_medio": 293375
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3367,
+      "compraventas": 21,
+      "importe_medio": 277231
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2485,
+      "compraventas": 29,
+      "importe_medio": 181995
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3429,
+      "compraventas": 51,
+      "importe_medio": 283175
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2131,
+      "compraventas": 54,
+      "importe_medio": 211356
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2731,
+      "compraventas": 26,
+      "importe_medio": 245322
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 6292,
+      "compraventas": 7,
+      "importe_medio": 275600
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2707,
+      "compraventas": 22,
+      "importe_medio": 237663
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2533,
+      "compraventas": 48,
+      "importe_medio": 214064
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1891,
+      "compraventas": 40,
+      "importe_medio": 152820
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3921,
+      "compraventas": 6,
+      "importe_medio": 373167
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2836,
+      "compraventas": 23,
+      "importe_medio": 251771
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2392,
+      "compraventas": 35,
+      "importe_medio": 181791
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 4976,
+      "compraventas": 10,
+      "importe_medio": 889286
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 4272,
+      "compraventas": 7,
+      "importe_medio": 423571
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2624,
+      "compraventas": 14,
+      "importe_medio": 275500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3154,
+      "compraventas": 5,
+      "importe_medio": 292500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2365,
+      "compraventas": 13,
+      "importe_medio": 272867
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2025-12",
+      "precio_m2": 3087,
+      "compraventas": 2191,
+      "importe_medio": 316774
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3895,
+      "compraventas": 22,
+      "importe_medio": 242048
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2403,
+      "compraventas": 5,
+      "importe_medio": 344050
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2764,
+      "compraventas": 9,
+      "importe_medio": 336500
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3084,
+      "compraventas": 13,
+      "importe_medio": 313254
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2233,
+      "compraventas": 6,
+      "importe_medio": 239800
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1305,
+      "compraventas": 38,
+      "importe_medio": 113701
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1034,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 3105,
+      "compraventas": 299,
+      "importe_medio": 245939
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1825,
+      "compraventas": 11,
+      "importe_medio": 151844
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2846,
+      "compraventas": 34,
+      "importe_medio": 184000
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1782,
+      "compraventas": 32,
+      "importe_medio": 161070
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2706,
+      "compraventas": 35,
+      "importe_medio": 208017
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 2871,
+      "compraventas": 4,
+      "importe_medio": 302875
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2025-12",
+      "precio_m2": 1324,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1102,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2490,
+      "compraventas": 7,
+      "importe_medio": 179286
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2212,
+      "compraventas": 12,
+      "importe_medio": 304778
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1338,
+      "compraventas": 12,
+      "importe_medio": 146717
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1417,
+      "compraventas": 23,
+      "importe_medio": 146413
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3444,
+      "compraventas": 32,
+      "importe_medio": 539660
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3005,
+      "compraventas": 21,
+      "importe_medio": 316056
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3386,
+      "compraventas": 67,
+      "importe_medio": 241543
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2899,
+      "compraventas": 27,
+      "importe_medio": 372198
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 864,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2677,
+      "compraventas": 25,
+      "importe_medio": 284380
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1449,
+      "compraventas": 6,
+      "importe_medio": 177483
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2059,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2052,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3230,
+      "compraventas": 74,
+      "importe_medio": 302439
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2124,
+      "compraventas": 15,
+      "importe_medio": 342021
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2491,
+      "compraventas": 16,
+      "importe_medio": 258278
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3610,
+      "compraventas": 13,
+      "importe_medio": 441550
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3350,
+      "compraventas": 93,
+      "importe_medio": 326849
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2648,
+      "compraventas": 26,
+      "importe_medio": 241261
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2827,
+      "compraventas": 14,
+      "importe_medio": 223529
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3248,
+      "compraventas": 37,
+      "importe_medio": 348673
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 5892,
+      "compraventas": 30,
+      "importe_medio": 931179
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 4088,
+      "compraventas": 19,
+      "importe_medio": 622561
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 4233,
+      "compraventas": 32,
+      "importe_medio": 509693
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 4310,
+      "compraventas": 67,
+      "importe_medio": 591995
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 5278,
+      "compraventas": 27,
+      "importe_medio": 644106
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3066,
+      "compraventas": 95,
+      "importe_medio": 337994
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3031,
+      "compraventas": 24,
+      "importe_medio": 431056
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2310,
+      "compraventas": 39,
+      "importe_medio": 203000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3688,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3485,
+      "compraventas": 25,
+      "importe_medio": 314855
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2907,
+      "compraventas": 28,
+      "importe_medio": 217757
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3561,
+      "compraventas": 25,
+      "importe_medio": 307790
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2732,
+      "compraventas": 43,
+      "importe_medio": 217455
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3105,
+      "compraventas": 23,
+      "importe_medio": 219863
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 4679,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3774,
+      "compraventas": 17,
+      "importe_medio": 272467
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2870,
+      "compraventas": 25,
+      "importe_medio": 233206
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2266,
+      "compraventas": 24,
+      "importe_medio": 142133
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 5045,
+      "compraventas": 14,
+      "importe_medio": 343462
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2918,
+      "compraventas": 18,
+      "importe_medio": 276382
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2537,
+      "compraventas": 27,
+      "importe_medio": 186519
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 6278,
+      "compraventas": 14,
+      "importe_medio": 738331
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3670,
+      "compraventas": 5,
+      "importe_medio": 315600
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2719,
+      "compraventas": 7,
+      "importe_medio": 300176
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2811,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2872,
+      "compraventas": 4,
+      "importe_medio": 303000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-01",
+      "precio_m2": 3119,
+      "compraventas": 1514,
+      "importe_medio": 311979
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 4243,
+      "compraventas": 11,
+      "importe_medio": 278909
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2444,
+      "compraventas": 5,
+      "importe_medio": 359800
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2803,
+      "compraventas": 4,
+      "importe_medio": 288750
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3248,
+      "compraventas": 10,
+      "importe_medio": 262389
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2814,
+      "compraventas": 9,
+      "importe_medio": 326380
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 990,
+      "compraventas": 28,
+      "importe_medio": 85507
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1034,
+      "compraventas": 42,
+      "importe_medio": 90244
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 3335,
+      "compraventas": 86,
+      "importe_medio": 275115
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2640,
+      "compraventas": 4,
+      "importe_medio": 117500
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2687,
+      "compraventas": 24,
+      "importe_medio": 207000
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1985,
+      "compraventas": 16,
+      "importe_medio": 209233
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2710,
+      "compraventas": 25,
+      "importe_medio": 235451
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 2833,
+      "compraventas": 4,
+      "importe_medio": 330000
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2026-01",
+      "precio_m2": 1264,
+      "compraventas": 5,
+      "importe_medio": 134000
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1004,
+      "compraventas": 6,
+      "importe_medio": 113458
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2634,
+      "compraventas": 8,
+      "importe_medio": 208063
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2324,
+      "compraventas": 15,
+      "importe_medio": 273858
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1994,
+      "compraventas": 12,
+      "importe_medio": 198104
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1546,
+      "compraventas": 22,
+      "importe_medio": 157090
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3323,
+      "compraventas": 31,
+      "importe_medio": 467370
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3071,
+      "compraventas": 21,
+      "importe_medio": 260400
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3422,
+      "compraventas": 81,
+      "importe_medio": 236623
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3533,
+      "compraventas": 27,
+      "importe_medio": 480597
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 925,
+      "compraventas": 5,
+      "importe_medio": 89750
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2084,
+      "compraventas": 26,
+      "importe_medio": 245864
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2019,
+      "compraventas": 7,
+      "importe_medio": 180998
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2059,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2092,
+      "compraventas": 6,
+      "importe_medio": 182400
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3450,
+      "compraventas": 74,
+      "importe_medio": 368242
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3556,
+      "compraventas": 33,
+      "importe_medio": 452797
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3039,
+      "compraventas": 21,
+      "importe_medio": 450216
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 4755,
+      "compraventas": 11,
+      "importe_medio": 708028
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3532,
+      "compraventas": 82,
+      "importe_medio": 294959
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2471,
+      "compraventas": 33,
+      "importe_medio": 254956
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2731,
+      "compraventas": 20,
+      "importe_medio": 284023
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3640,
+      "compraventas": 32,
+      "importe_medio": 490125
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 7952,
+      "compraventas": 26,
+      "importe_medio": 933970
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 4499,
+      "compraventas": 15,
+      "importe_medio": 459268
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3955,
+      "compraventas": 19,
+      "importe_medio": 439525
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 4132,
+      "compraventas": 61,
+      "importe_medio": 553823
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3276,
+      "compraventas": 26,
+      "importe_medio": 366604
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3106,
+      "compraventas": 77,
+      "importe_medio": 344379
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2739,
+      "compraventas": 35,
+      "importe_medio": 415658
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2875,
+      "compraventas": 42,
+      "importe_medio": 245841
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2628,
+      "compraventas": 6,
+      "importe_medio": 254000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3946,
+      "compraventas": 17,
+      "importe_medio": 337533
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3100,
+      "compraventas": 19,
+      "importe_medio": 212637
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3309,
+      "compraventas": 20,
+      "importe_medio": 317198
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2571,
+      "compraventas": 31,
+      "importe_medio": 210100
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2812,
+      "compraventas": 31,
+      "importe_medio": 239112
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 4421,
+      "compraventas": 6,
+      "importe_medio": 362500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2839,
+      "compraventas": 21,
+      "importe_medio": 217509
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2814,
+      "compraventas": 33,
+      "importe_medio": 291379
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1899,
+      "compraventas": 29,
+      "importe_medio": 147708
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3922,
+      "compraventas": 18,
+      "importe_medio": 238529
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3484,
+      "compraventas": 14,
+      "importe_medio": 263415
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2248,
+      "compraventas": 22,
+      "importe_medio": 168750
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 5065,
+      "compraventas": 16,
+      "importe_medio": 549000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 4812,
+      "compraventas": 7,
+      "importe_medio": 447500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3051,
+      "compraventas": 4,
+      "importe_medio": 220428
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2811,
+      "compraventas": 5,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2519,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-02",
+      "precio_m2": 3178,
+      "compraventas": 1549,
+      "importe_medio": 314873
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3695,
+      "compraventas": 34,
+      "importe_medio": 292135
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2234,
+      "compraventas": 5,
+      "importe_medio": 391400
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3766,
+      "compraventas": 4,
+      "importe_medio": 297500
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3340,
+      "compraventas": 20,
+      "importe_medio": 300025
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2743,
+      "compraventas": 4,
+      "importe_medio": 307250
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1211,
+      "compraventas": 28,
+      "importe_medio": 124389
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1034,
+      "compraventas": null,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3247,
+      "compraventas": 82,
+      "importe_medio": 259236
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2200,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 3257,
+      "compraventas": 26,
+      "importe_medio": 224084
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2204,
+      "compraventas": 30,
+      "importe_medio": 205532
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2777,
+      "compraventas": 20,
+      "importe_medio": 221553
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 2702,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2026-02",
+      "precio_m2": 1084,
+      "compraventas": 6,
+      "importe_medio": 134250
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2252,
+      "compraventas": 5,
+      "importe_medio": 180188
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2631,
+      "compraventas": 9,
+      "importe_medio": 174000
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2479,
+      "compraventas": 24,
+      "importe_medio": 318410
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1738,
+      "compraventas": 10,
+      "importe_medio": 195384
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1604,
+      "compraventas": 25,
+      "importe_medio": 143075
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3609,
+      "compraventas": 32,
+      "importe_medio": 517666
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3041,
+      "compraventas": 24,
+      "importe_medio": 325061
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3247,
+      "compraventas": 84,
+      "importe_medio": 237836
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3696,
+      "compraventas": 22,
+      "importe_medio": 311922
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 864,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3576,
+      "compraventas": 29,
+      "importe_medio": 515054
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1464,
+      "compraventas": 13,
+      "importe_medio": 201231
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 998,
+      "compraventas": 5,
+      "importe_medio": 106400
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2052,
+      "compraventas": 4,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2773,
+      "compraventas": 78,
+      "importe_medio": 330564
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3238,
+      "compraventas": 47,
+      "importe_medio": 399339
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3938,
+      "compraventas": 22,
+      "importe_medio": 453529
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4138,
+      "compraventas": 13,
+      "importe_medio": 564771
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3579,
+      "compraventas": 127,
+      "importe_medio": 303460
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2260,
+      "compraventas": 41,
+      "importe_medio": 204984
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2470,
+      "compraventas": 25,
+      "importe_medio": 227768
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4033,
+      "compraventas": 26,
+      "importe_medio": 465711
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4901,
+      "compraventas": 34,
+      "importe_medio": 616085
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4085,
+      "compraventas": 17,
+      "importe_medio": 498929
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3792,
+      "compraventas": 25,
+      "importe_medio": 512809
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4883,
+      "compraventas": 55,
+      "importe_medio": 665116
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3105,
+      "compraventas": 31,
+      "importe_medio": 346881
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3008,
+      "compraventas": 104,
+      "importe_medio": 308845
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3412,
+      "compraventas": 49,
+      "importe_medio": 404783
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3256,
+      "compraventas": 49,
+      "importe_medio": 279236
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4466,
+      "compraventas": 9,
+      "importe_medio": 435211
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3768,
+      "compraventas": 29,
+      "importe_medio": 325296
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2720,
+      "compraventas": 24,
+      "importe_medio": 213172
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2521,
+      "compraventas": 88,
+      "importe_medio": 270630
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2763,
+      "compraventas": 32,
+      "importe_medio": 247549
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2764,
+      "compraventas": 23,
+      "importe_medio": 247800
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 5235,
+      "compraventas": 10,
+      "importe_medio": 330300
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3784,
+      "compraventas": 33,
+      "importe_medio": 276524
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1794,
+      "compraventas": 73,
+      "importe_medio": 238392
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1832,
+      "compraventas": 45,
+      "importe_medio": 157500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3511,
+      "compraventas": 15,
+      "importe_medio": 297267
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2548,
+      "compraventas": 20,
+      "importe_medio": 211000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2667,
+      "compraventas": 39,
+      "importe_medio": 200171
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 7760,
+      "compraventas": 52,
+      "importe_medio": 408545
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4087,
+      "compraventas": 12,
+      "importe_medio": 409083
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3477,
+      "compraventas": 15,
+      "importe_medio": 296500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2811,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2854,
+      "compraventas": 11,
+      "importe_medio": 272727
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-03",
+      "precio_m2": 3094,
+      "compraventas": 2019,
+      "importe_medio": 307358
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3956,
+      "compraventas": 29,
+      "importe_medio": 271741
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2416,
+      "compraventas": 5,
+      "importe_medio": 358750
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2812,
+      "compraventas": 12,
+      "importe_medio": 253525
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3238,
+      "compraventas": 28,
+      "importe_medio": 325476
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 4040,
+      "compraventas": 9,
+      "importe_medio": 511886
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1933,
+      "compraventas": 26,
+      "importe_medio": 160152
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1034,
+      "compraventas": null,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 3102,
+      "compraventas": 104,
+      "importe_medio": 231705
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2124,
+      "compraventas": 9,
+      "importe_medio": 249222
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2656,
+      "compraventas": 48,
+      "importe_medio": 227222
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1941,
+      "compraventas": 27,
+      "importe_medio": 200909
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2759,
+      "compraventas": 37,
+      "importe_medio": 238314
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 2073,
+      "compraventas": 5,
+      "importe_medio": 187000
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2026-03",
+      "precio_m2": 1243,
+      "compraventas": 7,
+      "importe_medio": 158600
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1030,
+      "compraventas": 6,
+      "importe_medio": 132167
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2203,
+      "compraventas": 11,
+      "importe_medio": 170413
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1855,
+      "compraventas": 12,
+      "importe_medio": 222189
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1715,
+      "compraventas": 21,
+      "importe_medio": 232975
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1807,
+      "compraventas": 16,
+      "importe_medio": 159667
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3325,
+      "compraventas": 36,
+      "importe_medio": 482691
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2847,
+      "compraventas": 20,
+      "importe_medio": 305838
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3074,
+      "compraventas": 78,
+      "importe_medio": 259008
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3633,
+      "compraventas": 15,
+      "importe_medio": 459447
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 864,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2758,
+      "compraventas": 27,
+      "importe_medio": 359229
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2273,
+      "compraventas": 8,
+      "importe_medio": 176125
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2134,
+      "compraventas": 6,
+      "importe_medio": 245817
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2052,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3805,
+      "compraventas": 108,
+      "importe_medio": 389067
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3501,
+      "compraventas": 37,
+      "importe_medio": 366735
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3748,
+      "compraventas": 15,
+      "importe_medio": 358858
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3326,
+      "compraventas": 16,
+      "importe_medio": 398443
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3574,
+      "compraventas": 129,
+      "importe_medio": 341055
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2559,
+      "compraventas": 40,
+      "importe_medio": 266180
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2789,
+      "compraventas": 12,
+      "importe_medio": 264998
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 4328,
+      "compraventas": 109,
+      "importe_medio": 452500
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 5788,
+      "compraventas": 39,
+      "importe_medio": 666818
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 5510,
+      "compraventas": 19,
+      "importe_medio": 752833
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3677,
+      "compraventas": 34,
+      "importe_medio": 475438
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 4607,
+      "compraventas": 67,
+      "importe_medio": 681535
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 4172,
+      "compraventas": 33,
+      "importe_medio": 458952
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3128,
+      "compraventas": 120,
+      "importe_medio": 334502
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2866,
+      "compraventas": 43,
+      "importe_medio": 291253
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2510,
+      "compraventas": 31,
+      "importe_medio": 228569
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3688,
+      "compraventas": 4,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3657,
+      "compraventas": 22,
+      "importe_medio": 328050
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2810,
+      "compraventas": 27,
+      "importe_medio": 199509
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 4237,
+      "compraventas": 34,
+      "importe_medio": 427129
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2806,
+      "compraventas": 26,
+      "importe_medio": 245794
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3338,
+      "compraventas": 22,
+      "importe_medio": 256020
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 5042,
+      "compraventas": 7,
+      "importe_medio": 343571
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3208,
+      "compraventas": 24,
+      "importe_medio": 232221
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2373,
+      "compraventas": 40,
+      "importe_medio": 241775
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1928,
+      "compraventas": 25,
+      "importe_medio": 146167
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3663,
+      "compraventas": 9,
+      "importe_medio": 312989
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2872,
+      "compraventas": 26,
+      "importe_medio": 239138
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2361,
+      "compraventas": 25,
+      "importe_medio": 193913
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 5334,
+      "compraventas": 5,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3963,
+      "compraventas": 11,
+      "importe_medio": 463621
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3732,
+      "compraventas": 12,
+      "importe_medio": 363582
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2825,
+      "compraventas": 4,
+      "importe_medio": 242248
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2141,
+      "compraventas": 12,
+      "importe_medio": 243314
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-04",
+      "precio_m2": 3282,
+      "compraventas": 1796,
+      "importe_medio": 327322
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 4267,
+      "compraventas": 26,
+      "importe_medio": 306173
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2650,
+      "compraventas": 4,
+      "importe_medio": 395500
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3415,
+      "compraventas": 7,
+      "importe_medio": 273750
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3278,
+      "compraventas": 14,
+      "importe_medio": 303955
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2781,
+      "compraventas": 10,
+      "importe_medio": 291709
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1425,
+      "compraventas": 18,
+      "importe_medio": 138417
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1034,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3386,
+      "compraventas": 84,
+      "importe_medio": 244006
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1570,
+      "compraventas": 5,
+      "importe_medio": 143200
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 3100,
+      "compraventas": 32,
+      "importe_medio": 191754
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2119,
+      "compraventas": 25,
+      "importe_medio": 206831
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2834,
+      "compraventas": 33,
+      "importe_medio": 210458
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 2360,
+      "compraventas": 4,
+      "importe_medio": 265500
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2026-04",
+      "precio_m2": 1267,
+      "compraventas": 14,
+      "importe_medio": 112377
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1257,
+      "compraventas": 10,
+      "importe_medio": 102792
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2648,
+      "compraventas": 4,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2995,
+      "compraventas": 13,
+      "importe_medio": 284222
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1932,
+      "compraventas": 13,
+      "importe_medio": 223944
+    },
+    {
+      "municipio": "Antequera",
+      "cp": "29200",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1579,
+      "compraventas": 13,
+      "importe_medio": 197313
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 4513,
+      "compraventas": 34,
+      "importe_medio": 572043
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3867,
+      "compraventas": 28,
+      "importe_medio": 333820
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3008,
+      "compraventas": 67,
+      "importe_medio": 229158
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 4639,
+      "compraventas": 14,
+      "importe_medio": 422167
+    },
+    {
+      "municipio": "Campillos",
+      "cp": "29320",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 721,
+      "compraventas": 4,
+      "importe_medio": 72662
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2866,
+      "compraventas": 28,
+      "importe_medio": 319802
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1798,
+      "compraventas": 5,
+      "importe_medio": 153520
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2059,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29580",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2052,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 4200,
+      "compraventas": 92,
+      "importe_medio": 398533
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3467,
+      "compraventas": 38,
+      "importe_medio": 395286
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 5227,
+      "compraventas": 24,
+      "importe_medio": 549485
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3234,
+      "compraventas": 9,
+      "importe_medio": 411111
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3861,
+      "compraventas": 150,
+      "importe_medio": 297315
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1383,
+      "compraventas": 85,
+      "importe_medio": 142565
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2832,
+      "compraventas": 21,
+      "importe_medio": 229720
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3325,
+      "compraventas": 22,
+      "importe_medio": 339319
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 7297,
+      "compraventas": 36,
+      "importe_medio": 802003
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3501,
+      "compraventas": 25,
+      "importe_medio": 344110
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 4464,
+      "compraventas": 26,
+      "importe_medio": 467187
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 4783,
+      "compraventas": 57,
+      "importe_medio": 584661
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3458,
+      "compraventas": 29,
+      "importe_medio": 416497
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3553,
+      "compraventas": 105,
+      "importe_medio": 333373
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2784,
+      "compraventas": 23,
+      "importe_medio": 278675
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29651",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2900,
+      "compraventas": 25,
+      "importe_medio": 252830
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2962,
+      "compraventas": 6,
+      "importe_medio": 244333
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29002",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3921,
+      "compraventas": 12,
+      "importe_medio": 314050
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2537,
+      "compraventas": 28,
+      "importe_medio": 183804
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3973,
+      "compraventas": 29,
+      "importe_medio": 339621
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3093,
+      "compraventas": 32,
+      "importe_medio": 256868
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2770,
+      "compraventas": 21,
+      "importe_medio": 271053
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29008",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 6335,
+      "compraventas": 5,
+      "importe_medio": 733600
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3589,
+      "compraventas": 31,
+      "importe_medio": 242160
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2678,
+      "compraventas": 43,
+      "importe_medio": 216064
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2088,
+      "compraventas": 35,
+      "importe_medio": 155877
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3980,
+      "compraventas": 9,
+      "importe_medio": 208643
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3271,
+      "compraventas": 27,
+      "importe_medio": 215379
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2286,
+      "compraventas": 17,
+      "importe_medio": 160302
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 5459,
+      "compraventas": 7,
+      "importe_medio": 801400
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3843,
+      "compraventas": 8,
+      "importe_medio": 354000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3790,
+      "compraventas": 7,
+      "importe_medio": 366333
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3005,
+      "compraventas": 7,
+      "importe_medio": 270857
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2718,
+      "compraventas": 10,
+      "importe_medio": 284350
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-05",
+      "precio_m2": 3367,
+      "compraventas": 1691,
+      "importe_medio": 307721
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 4097,
+      "compraventas": 20,
+      "importe_medio": 281605
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3082,
+      "compraventas": 5,
+      "importe_medio": 357500
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29720",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2360,
+      "compraventas": 10,
+      "importe_medio": 217088
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3271,
+      "compraventas": 20,
+      "importe_medio": 308389
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2905,
+      "compraventas": 14,
+      "importe_medio": 321436
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1629,
+      "compraventas": 24,
+      "importe_medio": 134325
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1034,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3338,
+      "compraventas": 93,
+      "importe_medio": 238246
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 2200,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3723,
+      "compraventas": 22,
+      "importe_medio": 223239
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1855,
+      "compraventas": 22,
+      "importe_medio": 174324
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3168,
+      "compraventas": 23,
+      "importe_medio": 217635
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 3110,
+      "compraventas": 5,
+      "importe_medio": 297920
+    },
+    {
+      "municipio": "Álora",
+      "cp": "29500",
+      "tipo_ambito": "cp",
+      "periodo": "2026-05",
+      "precio_m2": 1607,
+      "compraventas": 5,
+      "importe_medio": 135280
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 1309,
+      "compraventas": 9,
+      "importe_medio": 88821
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2738,
+      "compraventas": 8,
+      "importe_medio": 187913
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2693,
+      "compraventas": 18,
+      "importe_medio": 228727
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 1217,
+      "compraventas": 12,
+      "importe_medio": 148090
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3652,
+      "compraventas": 37,
+      "importe_medio": 445067
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3151,
+      "compraventas": 32,
+      "importe_medio": 344300
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3565,
+      "compraventas": 73,
+      "importe_medio": 239255
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3609,
+      "compraventas": 23,
+      "importe_medio": 376341
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2773,
+      "compraventas": 19,
+      "importe_medio": 301791
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2042,
+      "compraventas": 9,
+      "importe_medio": 186625
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2450,
+      "compraventas": 10,
+      "importe_medio": 222000
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3201,
+      "compraventas": 119,
+      "importe_medio": 357643
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3216,
+      "compraventas": 33,
+      "importe_medio": 464155
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3864,
+      "compraventas": 23,
+      "importe_medio": 389427
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3390,
+      "compraventas": 10,
+      "importe_medio": 371554
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3937,
+      "compraventas": 119,
+      "importe_medio": 304797
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2293,
+      "compraventas": 39,
+      "importe_medio": 234419
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2826,
+      "compraventas": 19,
+      "importe_medio": 264594
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3774,
+      "compraventas": 23,
+      "importe_medio": 366053
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 7300,
+      "compraventas": 22,
+      "importe_medio": 1077688
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3914,
+      "compraventas": 19,
+      "importe_medio": 451059
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3922,
+      "compraventas": 44,
+      "importe_medio": 481641
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 4732,
+      "compraventas": 72,
+      "importe_medio": 616456
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 4074,
+      "compraventas": 29,
+      "importe_medio": 485339
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3478,
+      "compraventas": 126,
+      "importe_medio": 357477
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3000,
+      "compraventas": 30,
+      "importe_medio": 310836
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 4250,
+      "compraventas": 4,
+      "importe_medio": 476000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2730,
+      "compraventas": 27,
+      "importe_medio": 207925
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 4305,
+      "compraventas": 31,
+      "importe_medio": 399376
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3045,
+      "compraventas": 32,
+      "importe_medio": 239806
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3246,
+      "compraventas": 22,
+      "importe_medio": 272170
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2691,
+      "compraventas": 23,
+      "importe_medio": 217164
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3459,
+      "compraventas": 37,
+      "importe_medio": 293481
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2369,
+      "compraventas": 32,
+      "importe_medio": 180952
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 4046,
+      "compraventas": 15,
+      "importe_medio": 316367
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3222,
+      "compraventas": 22,
+      "importe_medio": 241836
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2697,
+      "compraventas": 38,
+      "importe_medio": 189625
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 5751,
+      "compraventas": 11,
+      "importe_medio": 748753
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3928,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3821,
+      "compraventas": 10,
+      "importe_medio": 438611
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2768,
+      "compraventas": 10,
+      "importe_medio": 262690
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2519,
+      "compraventas": 4,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-06",
+      "precio_m2": 3297,
+      "compraventas": 1790,
+      "importe_medio": 318989
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3946,
+      "compraventas": 25,
+      "importe_medio": 308859
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2471,
+      "compraventas": 7,
+      "importe_medio": 392857
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2729,
+      "compraventas": 15,
+      "importe_medio": 297417
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2431,
+      "compraventas": 12,
+      "importe_medio": 245769
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 1476,
+      "compraventas": 34,
+      "importe_medio": 141468
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 1034,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3084,
+      "compraventas": 132,
+      "importe_medio": 260204
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 1998,
+      "compraventas": 6,
+      "importe_medio": 219800
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3073,
+      "compraventas": 24,
+      "importe_medio": 190926
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 2218,
+      "compraventas": 25,
+      "importe_medio": 180924
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3051,
+      "compraventas": 19,
+      "importe_medio": 227684
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-06",
+      "precio_m2": 3041,
+      "compraventas": 7,
+      "importe_medio": 287400
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 1237,
+      "compraventas": 15,
+      "importe_medio": 106661
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2324,
+      "compraventas": 14,
+      "importe_medio": 158857
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2577,
+      "compraventas": 19,
+      "importe_medio": 337147
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 1828,
+      "compraventas": 11,
+      "importe_medio": 155890
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3828,
+      "compraventas": 29,
+      "importe_medio": 476968
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3370,
+      "compraventas": 31,
+      "importe_medio": 283336
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3749,
+      "compraventas": 86,
+      "importe_medio": 257118
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3339,
+      "compraventas": 10,
+      "importe_medio": 340890
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2621,
+      "compraventas": 25,
+      "importe_medio": 303756
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 1685,
+      "compraventas": 13,
+      "importe_medio": 146702
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2899,
+      "compraventas": 6,
+      "importe_medio": 260450
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2495,
+      "compraventas": 160,
+      "importe_medio": 259996
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4021,
+      "compraventas": 36,
+      "importe_medio": 508031
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 5811,
+      "compraventas": 22,
+      "importe_medio": 700636
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3140,
+      "compraventas": 15,
+      "importe_medio": 371226
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4186,
+      "compraventas": 168,
+      "importe_medio": 359003
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2266,
+      "compraventas": 34,
+      "importe_medio": 259917
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2946,
+      "compraventas": 20,
+      "importe_medio": 268697
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4149,
+      "compraventas": 43,
+      "importe_medio": 527278
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 5179,
+      "compraventas": 38,
+      "importe_medio": 628236
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3242,
+      "compraventas": 23,
+      "importe_medio": 409818
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4542,
+      "compraventas": 28,
+      "importe_medio": 497915
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4865,
+      "compraventas": 49,
+      "importe_medio": 642382
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4314,
+      "compraventas": 34,
+      "importe_medio": 575245
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3359,
+      "compraventas": 115,
+      "importe_medio": 342240
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2802,
+      "compraventas": 18,
+      "importe_medio": 277969
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3688,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3001,
+      "compraventas": 30,
+      "importe_medio": 229783
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4326,
+      "compraventas": 30,
+      "importe_medio": 471203
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2971,
+      "compraventas": 36,
+      "importe_medio": 234400
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2807,
+      "compraventas": 24,
+      "importe_medio": 243470
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3405,
+      "compraventas": 12,
+      "importe_medio": 267427
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3106,
+      "compraventas": 39,
+      "importe_medio": 286360
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2276,
+      "compraventas": 30,
+      "importe_medio": 187305
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3692,
+      "compraventas": 9,
+      "importe_medio": 285895
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3443,
+      "compraventas": 21,
+      "importe_medio": 273063
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2613,
+      "compraventas": 28,
+      "importe_medio": 213713
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 1585,
+      "compraventas": 39,
+      "importe_medio": 457630
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3467,
+      "compraventas": 4,
+      "importe_medio": 367500
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 4138,
+      "compraventas": 8,
+      "importe_medio": 442250
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2909,
+      "compraventas": 5,
+      "importe_medio": 253125
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3064,
+      "compraventas": 11,
+      "importe_medio": 394000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-07",
+      "precio_m2": 3221,
+      "compraventas": 1964,
+      "importe_medio": 324253
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3544,
+      "compraventas": 24,
+      "importe_medio": 307977
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2505,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2370,
+      "compraventas": 12,
+      "importe_medio": 312893
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3253,
+      "compraventas": 10,
+      "importe_medio": 324248
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 1658,
+      "compraventas": 31,
+      "importe_medio": 149458
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 1034,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 3714,
+      "compraventas": 102,
+      "importe_medio": 267201
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2261,
+      "compraventas": 8,
+      "importe_medio": 204625
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2914,
+      "compraventas": 31,
+      "importe_medio": 229077
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2357,
+      "compraventas": 22,
+      "importe_medio": 186472
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2849,
+      "compraventas": 27,
+      "importe_medio": 242740
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-07",
+      "precio_m2": 2779,
+      "compraventas": 12,
+      "importe_medio": 243004
+    },
+    {
+      "municipio": "Alcaucín",
+      "cp": "29711",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 1578,
+      "compraventas": 4,
+      "importe_medio": 119925
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3061,
+      "compraventas": 6,
+      "importe_medio": 216333
+    },
+    {
+      "municipio": "Alhaurín de la Torre",
+      "cp": "29130",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3414,
+      "compraventas": 8,
+      "importe_medio": 256029
+    },
+    {
+      "municipio": "Alhaurín el Grande",
+      "cp": "29120",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2149,
+      "compraventas": 5,
+      "importe_medio": 278900
+    },
+    {
+      "municipio": "Benahavís",
+      "cp": "29679",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3465,
+      "compraventas": 20,
+      "importe_medio": 564416
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29630",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3323,
+      "compraventas": 18,
+      "importe_medio": 309201
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29631",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3497,
+      "compraventas": 42,
+      "importe_medio": 268045
+    },
+    {
+      "municipio": "Benalmádena",
+      "cp": "29639",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3599,
+      "compraventas": 6,
+      "importe_medio": 509833
+    },
+    {
+      "municipio": "Casares",
+      "cp": "29690",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2567,
+      "compraventas": 14,
+      "importe_medio": 312679
+    },
+    {
+      "municipio": "Coín",
+      "cp": "29100",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 1783,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Cártama",
+      "cp": "29570",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2059,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29680",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3350,
+      "compraventas": 39,
+      "importe_medio": 349563
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29688",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3001,
+      "compraventas": 15,
+      "importe_medio": 427485
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29689",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 4206,
+      "compraventas": 10,
+      "importe_medio": 564460
+    },
+    {
+      "municipio": "Estepona",
+      "cp": "29693",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2642,
+      "compraventas": 14,
+      "importe_medio": 308665
+    },
+    {
+      "municipio": "Fuengirola",
+      "cp": "29640",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3396,
+      "compraventas": 35,
+      "importe_medio": 309271
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29691",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2450,
+      "compraventas": 19,
+      "importe_medio": 275119
+    },
+    {
+      "municipio": "Manilva",
+      "cp": "29692",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2714,
+      "compraventas": 10,
+      "importe_medio": 237000
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29601",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 6200,
+      "compraventas": 20,
+      "importe_medio": 951902
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29602",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 6717,
+      "compraventas": 17,
+      "importe_medio": 741067
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29603",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 5903,
+      "compraventas": 7,
+      "importe_medio": 543071
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29604",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 4295,
+      "compraventas": 12,
+      "importe_medio": 478500
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29660",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 4137,
+      "compraventas": 31,
+      "importe_medio": 505000
+    },
+    {
+      "municipio": "Marbella",
+      "cp": "29670",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2477,
+      "compraventas": 10,
+      "importe_medio": 294500
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29649",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2932,
+      "compraventas": 46,
+      "importe_medio": 374740
+    },
+    {
+      "municipio": "Mijas",
+      "cp": "29650",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2646,
+      "compraventas": 15,
+      "importe_medio": 358896
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29001",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3688,
+      "compraventas": null,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29003",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2566,
+      "compraventas": 20,
+      "importe_medio": 190007
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29004",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3750,
+      "compraventas": 16,
+      "importe_medio": 315019
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29006",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2825,
+      "compraventas": 20,
+      "importe_medio": 230222
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29007",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3071,
+      "compraventas": 11,
+      "importe_medio": 241469
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29009",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3397,
+      "compraventas": 7,
+      "importe_medio": 254286
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29010",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2917,
+      "compraventas": 29,
+      "importe_medio": 258623
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29011",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 1855,
+      "compraventas": 28,
+      "importe_medio": 151919
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29012",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3590,
+      "compraventas": 13,
+      "importe_medio": 217308
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29013",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3540,
+      "compraventas": 12,
+      "importe_medio": 260000
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29014",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2714,
+      "compraventas": 19,
+      "importe_medio": 229263
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29016",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 5638,
+      "compraventas": 4,
+      "importe_medio": 759750
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29017",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 4562,
+      "compraventas": 5,
+      "importe_medio": 470800
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29018",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 4023,
+      "compraventas": 6,
+      "importe_medio": 290333
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29140",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2811,
+      "compraventas": 1,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "29190",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2519,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-08",
+      "precio_m2": 3317,
+      "compraventas": 1058,
+      "importe_medio": 328112
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 5229,
+      "compraventas": 9,
+      "importe_medio": 253322
+    },
+    {
+      "municipio": "Ojén",
+      "cp": "29612",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2505,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3706,
+      "compraventas": 12,
+      "importe_medio": 297612
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2607,
+      "compraventas": 5,
+      "importe_medio": 360800
+    },
+    {
+      "municipio": "Ronda",
+      "cp": "29400",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 1700,
+      "compraventas": 16,
+      "importe_medio": 140340
+    },
+    {
+      "municipio": "Tolox",
+      "cp": "29109",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 1034,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torremolinos",
+      "cp": "29620",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3502,
+      "compraventas": 57,
+      "importe_medio": 245237
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2200,
+      "compraventas": 2,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2960,
+      "compraventas": 22,
+      "importe_medio": 235976
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29700",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2304,
+      "compraventas": 21,
+      "importe_medio": 205658
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 3118,
+      "compraventas": 20,
+      "importe_medio": 230553
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-08",
+      "precio_m2": 2702,
+      "compraventas": 3,
+      "importe_medio": null
+    },
+    {
+      "municipio": "Algarrobo",
+      "cp": "29750",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 3102,
+      "compraventas": 13,
+      "importe_medio": 239308
+    },
+    {
+      "municipio": "Málaga",
+      "cp": "Todos",
+      "tipo_ambito": "provincia",
+      "periodo": "2026-09",
+      "precio_m2": 3726,
+      "compraventas": 1635,
+      "importe_medio": 364419
+    },
+    {
+      "municipio": "Nerja",
+      "cp": "29780",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 4402,
+      "compraventas": 19,
+      "importe_medio": 298395
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29730",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 3350,
+      "compraventas": 13,
+      "importe_medio": 344250
+    },
+    {
+      "municipio": "Rincón de la Victoria",
+      "cp": "29738",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 2901,
+      "compraventas": 6,
+      "importe_medio": 292083
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29770",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 2121,
+      "compraventas": 5,
+      "importe_medio": 143808
+    },
+    {
+      "municipio": "Torrox",
+      "cp": "29793",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 3687,
+      "compraventas": 36,
+      "importe_medio": 232191
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29740",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 2840,
+      "compraventas": 25,
+      "importe_medio": 215548
+    },
+    {
+      "municipio": "Vélez-Málaga",
+      "cp": "29751",
+      "tipo_ambito": "cp",
+      "periodo": "2026-09",
+      "precio_m2": 3054,
+      "compraventas": 4,
+      "importe_medio": 305375
+    }
+  ]
+}

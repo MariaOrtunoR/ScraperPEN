@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dashboard de estadísticas inmobiliarias de la provincia de Málaga por código postal.">
+  <title>ScraperPEN · Mercado inmobiliario de Málaga</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="nav-caption" aria-hidden="true">ANÁLISIS</div>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <button class="nav-link active" data-view="resumen" aria-label="Resumen general" title="Resumen general"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-text">Resumen general</span></button>
+      <button class="nav-link" data-view="codigos" aria-label="Códigos postales" title="Códigos postales"><span class="nav-icon" aria-hidden="true">⌖</span><span class="nav-text">Códigos postales</span></button>
+    </nav>
+  </aside>
+
+  <main class="main-area" data-current-view="resumen">
+    <section class="view active" id="view-resumen">
+      <div class="section-heading overview-section-heading">
+        <div class="summary-intro"><h2>Resumen general</h2><p>Una visión clara y actualizada del mercado inmobiliario provincial.</p></div>
+        <div class="heading-controls">
+          <div class="period-picker" id="period-picker-resumen">
+            <span class="period-caption">PERIODO DE LOS DATOS</span>
+            <button class="period-trigger" id="period-trigger-resumen" type="button" aria-haspopup="listbox" aria-expanded="false"><strong id="period-chip-resumen">—</strong><span class="period-chevron" aria-hidden="true">⌄</span></button>
+            <div class="period-menu" id="period-menu-resumen" role="listbox" aria-label="Seleccionar periodo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="kpi-grid summary-kpis">
+        <article class="kpi-card"><div class="kpi-top"><span>Importe medio</span><span class="kpi-icon">€</span></div><div class="kpi-value" id="summary-ticket">—</div><div class="kpi-foot">Importe medio de las operaciones provinciales</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Compraventas</span><span class="kpi-icon">↗</span></div><div class="kpi-value" id="summary-sales">—</div><div class="kpi-foot">Operaciones registradas en toda la provincia</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Precio medio por m²</span><span class="kpi-icon">⌂</span></div><div class="kpi-value" id="summary-price">—</div><div class="kpi-foot">Dato oficial del conjunto de la provincia de Málaga</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Superficie media estimada</span><span class="kpi-icon">↔</span></div><div class="kpi-value" id="summary-size">—</div><div class="kpi-foot">Importe medio dividido entre precio medio por m²</div></article>
+      </div>
+      <div class="visual-grid overview-grid">
+        <article class="panel trend-panel"><div class="panel-heading"><div><h3>Evolución del mercado provincial</h3><p id="summary-chart-subtitle">Serie mensual · importe medio de las operaciones</p></div><div class="metric-switch" role="group" aria-label="Indicador del gráfico provincial"><button type="button" class="metric-button active" data-metric="importe_medio" aria-pressed="true">Importe medio (€)</button><button type="button" class="metric-button" data-metric="compraventas" aria-pressed="false">Compraventas</button><button type="button" class="metric-button" data-metric="precio_m2" aria-pressed="false">Precio (€ / m²)</button></div></div><div id="summary-trend" class="chart-area"></div></article>
+        <article class="panel ranking-panel"><div class="panel-heading"><div><h3>TOP 5</h3></div><button class="text-action" data-go="codigos">Ver códigos postales ↗</button></div><div id="summary-ranking" class="ranking-list"></div></article>
+      </div>
+    </section>
+
+    <section class="view" id="view-codigos">
+      <div class="section-heading overview-section-heading">
+        <div class="summary-intro"><h2>Códigos postales</h2><p>Consulta los indicadores y la evolución mensual de cada código postal.</p></div>
+        <div class="heading-controls">
+          <div class="cp-picker" id="cp-picker">
+            <span class="period-caption">CÓDIGO POSTAL</span>
+            <button class="period-trigger" id="cp-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"><strong id="cp-chip">29001</strong><span class="period-chevron" aria-hidden="true">⌄</span></button>
+            <div class="period-menu" id="cp-menu" role="listbox" aria-label="Seleccionar código postal"></div>
+          </div>
+          <div class="period-picker" id="period-picker-codigos">
+            <span class="period-caption">PERIODO DE LOS DATOS</span>
+            <button class="period-trigger" id="period-trigger-codigos" type="button" aria-haspopup="listbox" aria-expanded="false"><strong id="period-chip-codigos">—</strong><span class="period-chevron" aria-hidden="true">⌄</span></button>
+            <div class="period-menu" id="period-menu-codigos" role="listbox" aria-label="Seleccionar periodo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="kpi-grid summary-kpis">
+        <article class="kpi-card"><div class="kpi-top"><span>Importe medio</span><span class="kpi-icon">€</span></div><div class="kpi-value" id="cp-ticket">—</div><div class="kpi-foot">Importe medio de las operaciones del código postal</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Compraventas</span><span class="kpi-icon">↗</span></div><div class="kpi-value" id="cp-sales">—</div><div class="kpi-foot">Operaciones registradas en el código postal</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Precio medio por m²</span><span class="kpi-icon">⌂</span></div><div class="kpi-value" id="cp-price">—</div><div class="kpi-foot">Dato del código postal seleccionado</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Superficie media estimada</span><span class="kpi-icon">↔</span></div><div class="kpi-value" id="cp-size">—</div><div class="kpi-foot">Importe medio dividido entre precio medio por m²</div></article>
+      </div>
+      <div class="visual-grid overview-grid">
+        <article class="panel trend-panel"><div class="panel-heading"><div><h3>Evolución del mercado</h3><p id="cp-chart-subtitle">Serie mensual · importe medio de las operaciones</p></div><div class="metric-switch" role="group" aria-label="Indicador del código postal"><button type="button" class="metric-button active" data-cp-metric="importe_medio" aria-pressed="true">Importe medio (€)</button><button type="button" class="metric-button" data-cp-metric="compraventas" aria-pressed="false">Compraventas</button><button type="button" class="metric-button" data-cp-metric="precio_m2" aria-pressed="false">Precio (€ / m²)</button></div></div><div id="cp-trend" class="chart-area"></div></article>
+        <article class="panel map-panel"><div class="panel-heading"><div class="map-period-heading"><h3 id="map-title">—</h3></div><div class="metric-switch map-metric-switch" role="group" aria-label="Indicador del mapa"><button type="button" class="metric-button active" data-map-metric="importe_medio" aria-pressed="true">Importe medio (€)</button><button type="button" class="metric-button" data-map-metric="compraventas" aria-pressed="false">Compraventas</button><button type="button" class="metric-button" data-map-metric="precio_m2" aria-pressed="false">Precio (€ / m²)</button></div></div><div id="postal-map" class="postal-map" role="region" aria-label="Mapa de indicadores por código postal de Málaga"></div><div class="map-legend"><span id="map-min-label">0 €</span><div class="legend-gradient"></div><span id="map-max-label">—</span></div></article>
+      </div>
+    </section>
+
+    <footer class="app-footer"><span><b>Fuente:</b> Portal Estadístico del Notariado <i>·</i> Provincia de Málaga <i>·</i> Pisos de segunda mano</span><a href="https://github.com/MariaOrtunoR/ScraperPEN" target="_blank" rel="noopener noreferrer">Ver proyecto en GitHub ↗</a></footer>
+  </main>
+</div>
+</body>
+</html>

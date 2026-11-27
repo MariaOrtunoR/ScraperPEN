@@ -1,331 +1,129 @@
+# Arquitectura de ScraperPEN
 
-# Arquitectura del proyecto ScraperPEN
+Este documento explica cómo se organiza ScraperPEN y cómo circula la información desde el portal de origen hasta el dashboard.
 
-## 1. Objetivo
+## 1. Visión general
 
-Este documento describe la arquitectura técnica de ScraperPEN, la organización de sus componentes y el flujo de información desde el Portal Estadístico del Notariado hasta la base de datos SQLite.
+ScraperPEN se compone de dos partes principales:
 
-Su finalidad es facilitar el mantenimiento del proyecto y permitir que cualquier desarrollador o asistente de IA comprenda cómo funciona sin tener que deducir la arquitectura examinando todo el código.
+1. **Proceso de extracción y preparación de datos**, desarrollado en Python y respaldado por SQLite.
+2. **Dashboard web**, una aplicación estática que carga un JSON y un archivo GeoJSON.
 
-## 2. Arquitectura general
-
-ScraperPEN utiliza una arquitectura sencilla basada en cuatro módulos Python con responsabilidades diferenciadas.
-
-| Componente         | Responsabilidad                                                             |
-| ------------------ | --------------------------------------------------------------------------- |
-| ScraperPEN.py      | Automatización de la navegación, descarga y extracción de estadísticas. |
-| DatabaseManager.py | Acceso a SQLite, normalización y almacenamiento de información.           |
-| CreateDatabase.py  | Creación e inicialización de la estructura de la base de datos.           |
-| ProcessData.py     | Transformación de `datos_crudos` a `datos_resumen` para el análisis.       |
-
-El sistema utiliza:
-
-- Playwright para automatizar el navegador.
-- pandas para organizar los datos extraídos.
-- openpyxl para generar archivos Excel.
-- python-dotenv para cargar la configuración local.
-- SQLite para almacenar los datos históricos.
-
-## 3. Organización de carpetas
+El flujo completo es:
 
 ```text
-ScraperPEN/
-│
-├── data/
-│   ├── database/
-│   │   └── inmobiliario.db
-│   │
-│   ├── processed/
-│   │
-│   └── raw/
-│       ├── excel/
-│       └── pdf/
-│
-├── resources/
-│
-├── src/
-│   ├── ScraperPEN.py
-│   ├── CreateDatabase.py
-│   ├── DatabaseManager.py
-│   └── ProcessData.py
-│
-├── tests/
-│
-├── docs/
-│
-├── .env
-├── .env.example
-├── .gitignore
-├── AGENTS.md
-├── README.md
-├── ROADMAP.md
-├── SEGUIMIENTO_PROYECTO.md
-└── requirements.txt
+Catálogo de ubicaciones en SQLite
+              |
+              v
+       ScraperPEN.py
+              |
+              v
+ Portal Estadístico del Notariado
+       (navegación Playwright)
+              |
+       +------+------+
+       |             |
+       v             v
+ Datos propios   Sin datos propios / error
+       |             |
+       v             v
+ datos_crudos    log_descargas
+       |
+       v
+ ProcessData.py
+       |
+       v
+ datos_resumen
+       |
+       v
+ ExportWebData.py
+       |
+       v
+ web/data/datos_resumen.json
+       |
+       v
+ Dashboard (HTML, CSS y JavaScript)
+       |
+       +---- web/data/malaga.geojson
 ```
 
-### 3.1. `src/`
+La información provincial se consulta directamente en el portal. No se calcula sumando los códigos postales. Si una consulta de código postal muestra datos provinciales en sustitución de datos propios, el scraper registra `sin_datos_cp` y no atribuye esos valores al código postal.
 
-Contiene los cuatro módulos principales del proyecto.
+## 2. Componentes Python
 
-### 3.2. `data/`
+| Archivo | Responsabilidad |
+|---|---|
+| `src/ScraperPEN.py` | Coordina el navegador, selecciona ubicaciones, consulta el portal, descarga archivos, extrae métricas y registra resultados. |
+| `src/CreateDatabase.py` | Define y prepara el esquema de las cuatro tablas SQLite. Incluye operaciones de migración del modelo territorial. |
+| `src/DatabaseManager.py` | Centraliza conexiones, validación del esquema, catálogo, cuotas, inserciones, actualizaciones y logs. |
+| `src/ProcessData.py` | Transforma las observaciones del formato largo al formato resumido. |
+| `src/ExportWebData.py` | Exporta `datos_resumen` a `web/data/datos_resumen.json`. |
 
-Almacena la información generada y utilizada por el sistema.
+## 3. Componentes web
 
-- `database/`: base de datos SQLite y copias de seguridad.
-- `raw/excel/`: archivos Excel descargados.
-- `raw/pdf/`: informes PDF descargados.
-- `processed/`: archivos derivados y resultados de procesamiento.
+| Archivo | Responsabilidad |
+|---|---|
+| `web/index.html` | Estructura y contenido de la aplicación. |
+| `web/assets/css/styles.css` | Diseño, distribución y estilos adaptables. |
+| `web/assets/js/app.js` | Carga los datos, gestiona filtros, calcula indicadores y dibuja gráficos y mapa. |
+| `web/data/datos_resumen.json` | Datos estadísticos que consume el dashboard. |
+| `web/data/malaga.geojson` | Geometrías de los códigos postales representados en el mapa. |
 
-### 3.3. `resources/`
+El dashboard es estático: no se conecta directamente a SQLite ni ejecuta Python en el navegador. Lee los archivos JSON y GeoJSON mediante `fetch`.
 
-Contiene los recursos de referencia del proyecto, como el catálogo de códigos postales, archivos geográficos y documentación metodológica.
+## 4. Identidad de las ubicaciones
 
-### 3.4. `tests/`
+Cada ubicación se identifica mediante la combinación `(municipio, cp)`.
 
-Contendrá las pruebas automatizadas de los distintos componentes.
+- Un código postal utiliza `tipo_ambito = 'cp'`.
+- La provincia se representa como `municipio = 'Málaga'`, `cp = 'Todos'` y `tipo_ambito = 'provincia'`.
 
-### 3.5. `docs/`
+La fila provincial es independiente de los códigos postales. Esta separación evita mezclar el dato oficial provincial con los valores particulares de cada CP.
 
-Contiene la documentación técnica y las decisiones arquitectónicas.
+## 5. Cuentas y control de consultas
 
-## 4. Responsabilidades de los módulos
+El catálogo contiene 161 ubicaciones: 160 códigos postales y una ubicación provincial. La asignación actual se distribuye entre cuatro cuentas internas:
 
-### 4.1. ScraperPEN.py
+| Cuenta | Ubicaciones asignadas |
+|---|---:|
+| `cuenta_1` | 45 |
+| `cuenta_2` | 45 |
+| `cuenta_3` | 45 |
+| `cuenta_4` | 26 |
+| **Total** | **161** |
 
-Es el módulo principal y coordina el proceso de obtención de información.
+Cada cuenta tiene un máximo configurado de 45 consultas enviadas por mes natural. El consumo se registra en `log_descargas.consulta_enviada`: se marca cuando el scraper pulsa «Más estadísticas». Los fallos anteriores a ese paso no consumen consulta; los posteriores sí.
 
-Sus responsabilidades son:
+Las ubicaciones mantienen una asignación fija. El programa procesa las cuentas secuencialmente y no inicia sesión en una cuenta si no tiene ubicaciones candidatas o cuota disponible.
 
-1. Cargar las variables de entorno.
-2. Obtener las credenciales de acceso.
-3. Consultar el catálogo de códigos postales mediante DatabaseManager.
-4. Determinar los códigos postales que se van a procesar.
-5. Iniciar el navegador mediante Playwright.
-6. Acceder al Portal Estadístico del Notariado.
-7. Seleccionar el código postal y los filtros correspondientes.
-8. Detectar si el portal muestra datos provinciales.
-9. Descargar el informe PDF cuando corresponda.
-10. Extraer las tres métricas inmobiliarias.
-11. Generar el archivo Excel.
-12. Enviar los registros válidos a DatabaseManager.
-13. Registrar el resultado de la consulta.
+## 6. Modos de ejecución
 
-El módulo contiene también las funciones auxiliares necesarias para seleccionar ubicaciones, extraer tablas, validar métricas y gestionar las descargas.
+- **Modo individual:** se indican una o varias claves `clave_portal`. El scraper las resuelve en SQLite y respeta su asignación de cuenta.
+- **Modo de prueba por defecto:** si no se indican argumentos y `PEN_EJECUTAR_TODOS_CP=0`, se utiliza `PEN_CP_PRUEBA` (por defecto, `29710`).
+- **Modo general:** si no se indican argumentos y `PEN_EJECUTAR_TODOS_CP=1`, se seleccionan ubicaciones pendientes. Se priorizan errores técnicos y después ubicaciones nunca consultadas. Se omiten las que terminaron `completada` o `sin_datos_cp`.
 
-El scraper debe mantenerse como un único archivo.
+## 7. Tratamiento y exportación
 
-### 4.2. DatabaseManager.py
+`ProcessData.py` agrupa por `(municipio, cp, periodo)` y pivota las tres métricas para crear una fila con `precio_m2`, `compraventas` e `importe_medio`. Los valores no disponibles se conservan como `NULL`.
 
-Centraliza las operaciones relacionadas con SQLite.
+`ExportWebData.py` consulta `datos_resumen`, incorpora `tipo_ambito` desde el catálogo y escribe un JSON con esta estructura general:
 
-Sus responsabilidades son:
-
-- Definir la ubicación de la base de datos.
-- Crear conexiones SQLite.
-- Activar las claves foráneas.
-- Validar el esquema principal.
-- Normalizar fechas de consulta.
-- Normalizar periodos estadísticos.
-- Normalizar nombres de métricas.
-- Normalizar valores numéricos.
-- Insertar y actualizar observaciones.
-- Registrar los resultados de las consultas.
-- Obtener el catálogo de códigos postales.
-
-Este módulo es el intermediario entre el scraper y la base de datos.
-
-Los demás componentes no deben duplicar sus operaciones de acceso y normalización.
-
-### 4.3. CreateDatabase.py
-
-Se encarga de inicializar la estructura SQLite.
-
-Crea las tablas:
-
-- `codigos_postales`
-- `datos_crudos`
-- `log_descargas`
-
-También define las restricciones de integridad y los índices correspondientes.
-
-Este módulo está destinado a la preparación de la estructura de la base de datos, no a la ejecución habitual de las consultas al portal.
-
-### 4.4. ProcessData.py
-
-Se encarga de preparar los datos para su análisis mediante la tabla `datos_resumen`.
-
-Sus responsabilidades son:
-
-- Leer `cp`, `periodo`, `metrica` y `valor` de `datos_crudos`.
-- Pivotar las métricas para convertirlas en las columnas `precio_m2`, `compraventas` e `importe_medio`.
-- Mantener una fila por combinación `(cp, periodo)`.
-- Crear `datos_resumen` si no existe y realizar UPSERT de los registros.
-- Conservar los valores no disponibles como `NULL`.
-- No modificar ni eliminar registros de `datos_crudos`.
-
-Puede ejecutarse independientemente con `python -m src.ProcessData`. El scraper también lo invoca una vez al terminar el bucle de códigos postales.
-
-## 5. Flujo general de ejecución
-
-El proceso habitual sigue esta secuencia:
-
-```text
-INICIO
-  |
-  v
-Cargar configuración y credenciales
-  |
-  v
-Obtener códigos postales de SQLite
-  |
-  v
-Determinar los CP que se consultarán
-  |
-  v
-Iniciar Playwright
-  |
-  v
-Acceder al Portal del Notariado
-  |
-  v
-Iniciar sesión
-  |
-  v
-Seleccionar código postal
-  |
-  v
-Aplicar filtros estadísticos
-  |
-  v
-Consultar mensaje de disponibilidad
-  |
-  +----------------------------+
-  |                            |
-  v                            v
-Datos provinciales        Datos propios del CP
-  |                            |
-  v                            v
-Registrar resultado       Descargar PDF
-sin_datos_cp                    |
-  |                            v
-  |                       Extraer métricas
-  |                            |
-  |                            v
-  |                       Validar métricas
-  |                            |
-  |                            v
-  |                       Generar Excel
-  |                            |
-  |                            v
-  |                       Guardar en SQLite
-  |                            |
-  |                            v
-  |                       Registrar resultado
-  |                       completada
-  |                            |
-  +-------------+--------------+
-                |
-                v
-          Siguiente CP
-                |
-                v
-       ¿Quedan códigos CP?
-                |
-                v
-       ProcessData.py
-                |
-                v
-               FIN
+```json
+{
+  "fecha_exportacion": "fecha y hora de exportación",
+  "total_registros": 0,
+  "datos": []
+}
 ```
 
-Si se produce un error técnico durante la consulta, se registra el estado `error` en `log_descargas`.
+Cada elemento de `datos` contiene municipio, CP, tipo de ámbito, periodo y las tres métricas.
 
-## 6. Flujo de almacenamiento
+## 8. Ejecución del dashboard
 
-El proyecto distingue entre los archivos originales descargados, las observaciones estadísticas y el historial de consultas.
+Para probar la web desde el equipo local:
 
-### 6.1. Archivos originales
+```powershell
+python -m http.server 8000 --directory web
+```
 
-Los archivos descargados se conservan en:
-
-- `data/raw/pdf/`
-- `data/raw/excel/`
-
-Su finalidad es permitir la consulta y comprobación posterior de la información obtenida del portal.
-
-### 6.2. Datos normalizados
-
-Las observaciones extraídas se envían a DatabaseManager para su normalización y almacenamiento en `datos_crudos`.
-
-La clave única es:
-
-`(cp, periodo, metrica)`
-
-Si una observación ya existe, se actualiza cuando corresponde.
-
-### 6.3. Datos transformados
-
-`ProcessData.py` genera `datos_resumen`, con una fila por `(cp, periodo)` y las columnas `precio_m2`, `compraventas` e `importe_medio`. La tabla es una representación derivada de `datos_crudos`; los valores ausentes se conservan como `NULL`. La transformación utiliza UPSERT y no modifica la tabla original.
-
-### 6.4. Registro de consultas
-
-Cada intento de consulta genera una entrada independiente en `log_descargas`.
-
-El registro permite conocer si una consulta terminó correctamente, si el portal mostró datos provinciales o si se produjo un error técnico.
-
-## 7. Configuración del sistema
-
-Las variables de entorno utilizadas son:
-
-| Variable                  | Función                                            |
-| ------------------------- | --------------------------------------------------- |
-| `PEN_USER_EMAIL`        | Usuario de acceso al portal.                        |
-| `PEN_USER_PASSWORD`     | Contraseña de acceso.                              |
-| `PEN_CP_PRUEBA`         | Código postal utilizado en modo de prueba.         |
-| `PEN_EJECUTAR_TODOS_CP` | Habilita la ejecución sobre el catálogo completo. |
-
-Las credenciales se almacenan localmente en `.env`.
-
-El archivo `.env.example` proporciona la plantilla de configuración sin incluir información sensible.
-
-## 8. Integridad y calidad de datos
-
-La arquitectura incorpora varias medidas para proteger la información:
-
-- Activación de claves foráneas en cada conexión SQLite.
-- Validación del esquema antes de realizar operaciones.
-- Comprobación de la existencia del código postal.
-- Restricción de unicidad de las observaciones.
-- Normalización de fechas, periodos, métricas y valores.
-- Separación entre datos válidos e intentos de consulta.
-- Registro de errores técnicos.
-- Exclusión de datos provinciales de las observaciones propias de un CP.
-
-## 9. Pruebas
-
-La carpeta `tests/` está destinada a contener pruebas automatizadas.
-
-Se priorizarán las pruebas de:
-
-- Acceso y operaciones SQLite.
-- Normalización de datos.
-- Inserción y actualización de observaciones.
-- Registro de consultas.
-- Extracción y validación de métricas.
-
-Las pruebas deben evitar modificaciones accidentales de la base de datos de producción y descargas masivas.
-
-## 10. Principios arquitectónicos
-
-La arquitectura de ScraperPEN debe respetar los siguientes principios:
-
-1. Mantener los cuatro módulos principales y sus responsabilidades actuales.
-2. Evitar duplicar operaciones de acceso a SQLite.
-3. Mantener separada la automatización del portal y el almacenamiento.
-4. Conservar los archivos originales descargados.
-5. Proteger la integridad de los datos históricos.
-6. Evitar introducir datos provinciales como datos de un código postal.
-7. Mantener una estructura sencilla y comprensible.
-8. Documentar cualquier cambio arquitectónico importante.
-
-Cualquier modificación de la arquitectura deberá analizarse previamente y contar con la aprobación del responsable del proyecto.
+Después se abre `http://localhost:8000`. Se necesita servir la carpeta por HTTP porque el navegador carga los ficheros JSON y GeoJSON con `fetch`.

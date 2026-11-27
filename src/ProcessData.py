@@ -13,35 +13,19 @@ METRICAS = [
 ]
 
 
-def crear_tabla_resumen(conexion):
-    """Crea la tabla de datos transformados si todavía no existe."""
-    conexion.execute("""
-        CREATE TABLE IF NOT EXISTS datos_resumen (
-            cp TEXT NOT NULL,
-            periodo TEXT NOT NULL,
-            precio_m2 NUMERIC,
-            compraventas NUMERIC,
-            importe_medio NUMERIC,
-            CONSTRAINT pk_datos_resumen PRIMARY KEY (cp, periodo),
-            CONSTRAINT fk_datos_resumen_cp
-                FOREIGN KEY (cp) REFERENCES codigos_postales(cp)
-        );
-    """)
-
-
 def obtener_datos_transformados(conexion):
     """Lee los datos originales y pivota las métricas a columnas."""
     datos = pd.read_sql_query("""
-        SELECT cp, periodo, metrica, valor
+        SELECT municipio, cp, periodo, metrica, valor
         FROM datos_crudos
-        ORDER BY cp, periodo;
+        ORDER BY municipio, cp, periodo;
     """, conexion)
 
     if datos.empty:
         return []
 
     datos_pivotados = datos.pivot(
-        index=["cp", "periodo"],
+        index=["municipio", "cp", "periodo"],
         columns="metrica",
         values="valor"
     ).reset_index()
@@ -54,7 +38,7 @@ def obtener_datos_transformados(conexion):
             datos_pivotados[metrica] = None
 
     datos_pivotados = datos_pivotados[
-        ["cp", "periodo", *METRICAS]
+        ["municipio", "cp", "periodo", *METRICAS]
     ]
 
     # Convierte los valores NaN de pandas en None para SQLite.
@@ -73,14 +57,15 @@ def guardar_datos_resumen(conexion, registros):
 
     conexion.executemany("""
         INSERT INTO datos_resumen (
+            municipio,
             cp,
             periodo,
             precio_m2,
             compraventas,
             importe_medio
         )
-        VALUES (?, ?, ?, ?, ?)
-        ON CONFLICT (cp, periodo) DO UPDATE SET
+        VALUES (?, ?, ?, ?, ?, ?)
+        ON CONFLICT (municipio, cp, periodo) DO UPDATE SET
             precio_m2 = excluded.precio_m2,
             compraventas = excluded.compraventas,
             importe_medio = excluded.importe_medio
@@ -94,11 +79,13 @@ def guardar_datos_resumen(conexion, registros):
 
 
 def procesar_datos():
-    """Ejecuta la transformación completa y actualiza datos_resumen."""
+    """Reconstruye datos_resumen a partir de datos_crudos."""
     with obtener_conexion() as conexion:
         validar_esquema_principal(conexion)
 
-        crear_tabla_resumen(conexion)
+        # Vacía la tabla para eliminar registros que ya no existen
+        # en datos_crudos.
+        conexion.execute("DELETE FROM datos_resumen;")
 
         registros = obtener_datos_transformados(conexion)
         cantidad = guardar_datos_resumen(conexion, registros)

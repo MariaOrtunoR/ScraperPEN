@@ -1,311 +1,133 @@
-
 # Base de datos SQLite
 
-## 1. Objetivo
+ScraperPEN utiliza SQLite como almacenamiento principal. La base de datos conserva el catálogo de ubicaciones, las observaciones estadísticas, el resumen preparado para análisis y el historial de consultas.
 
-El proyecto ScraperPEN utiliza SQLite para almacenar las estadísticas inmobiliarias obtenidas del Portal Estadístico del Notariado.
+## 1. Ubicación
 
-La base de datos permite:
-
-- Mantener un catálogo de códigos postales de la provincia de Málaga.
-- Almacenar las estadísticas inmobiliarias por código postal y periodo.
-- Registrar los intentos de consulta y el resultado de cada descarga.
-- Actualizar los datos existentes sin generar duplicados.
-- Mantener la integridad de las relaciones entre tablas.
-
-## 2. Ubicación
-
-La base de datos principal se encuentra en:
+El archivo de trabajo se encuentra en:
 
 ```text
 data/database/inmobiliario.db
 ```
 
-La ruta se define en `DatabaseManager.py` a partir de la ubicación del proyecto, por lo que no depende del directorio desde el que se ejecute el programa.
+La base contiene cuatro tablas:
 
-## 3. Estructura general
+- `codigos_postales`
+- `datos_crudos`
+- `datos_resumen`
+- `log_descargas`
 
-La base de datos contiene cuatro tablas:
+## 2. Relaciones
 
-1. `codigos_postales`
-2. `datos_crudos`
-3. `datos_resumen`
-4. `log_descargas`
-
-Sus relaciones son las siguientes:
+La tabla `codigos_postales` es el catálogo maestro. Las otras tres tablas la referencian mediante la clave compuesta `(municipio, cp)`.
 
 ```text
-codigos_postales
-       |
-       | 1
-       |
-       | N
-datos_crudos
-
-codigos_postales
-       |
-       | 1
-       |
-       | N
-datos_resumen
-
-codigos_postales
-       |
-       | 1
-       |
-       | N
-log_descargas
+                 codigos_postales
+                  (municipio, cp)
+                   /     |     \
+                  /      |      \
+                 v       v       v
+          datos_crudos datos_resumen log_descargas
 ```
 
-Cada código postal puede tener múltiples observaciones estadísticas y múltiples registros de consulta.
+`DatabaseManager.py` activa `PRAGMA foreign_keys = ON` en cada conexión y comprueba que el esquema contiene las tablas, columnas y relaciones esperadas.
 
-## 4. Tabla `codigos_postales`
+## 3. Tabla `codigos_postales`
 
-Contiene el catálogo maestro de códigos postales incluidos en el proyecto.
+Contiene una fila por ubicación del catálogo.
 
-| Campo         | Tipo | Restricciones | Descripción               |
-| ------------- | ---- | ------------- | -------------------------- |
-| `cp`        | TEXT | PRIMARY KEY   | Código postal             |
-| `municipio` | TEXT | NOT NULL      | Municipio al que pertenece |
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `municipio` | TEXT | Municipio asociado a la ubicación. |
+| `cp` | TEXT | Código postal guardado como texto; para provincia se utiliza `Todos`. |
+| `tipo_ambito` | TEXT | `cp` o `provincia`. |
+| `clave_portal` | TEXT | Texto utilizado para localizar la ubicación en el portal. |
+| `cuenta_id` | TEXT | Cuenta interna asignada (`cuenta_1` a `cuenta_4`). |
 
-El código postal se almacena como texto para conservar su formato.
+Clave primaria: `(municipio, cp)`.
 
-Esta tabla es la referencia para las demás tablas. Los códigos postales deben existir en ella antes de almacenar observaciones o registrar consultas.
+El catálogo de la base revisada contiene 160 códigos postales y una fila provincial: `Málaga / Todos`.
 
-El catálogo se mantiene como referencia de los códigos postales que se procesan en el proyecto.
+## 4. Tabla `datos_crudos`
 
-## 5. Tabla `datos_crudos`
+Guarda las observaciones en formato largo: una fila por ubicación, periodo y métrica.
 
-Almacena las observaciones estadísticas inmobiliarias obtenidas para cada código postal.
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `fecha_consulta` | TEXT | Fecha en la que se obtuvo la observación. |
+| `municipio` | TEXT | Municipio de la ubicación. |
+| `cp` | TEXT | Código postal o `Todos` para provincia. |
+| `metrica` | TEXT | `precio_m2`, `compraventas` o `importe_medio`. |
+| `periodo` | TEXT | Periodo estadístico en formato `AAAA-MM`. |
+| `valor` | NUMERIC | Valor de la métrica; admite `NULL`. |
 
-| Campo              | Tipo    | Restricciones         | Descripción                                 |
-| ------------------ | ------- | --------------------- | -------------------------------------------- |
-| `fecha_consulta` | TEXT    | NOT NULL              | Fecha en la que se obtuvo la información    |
-| `cp`             | TEXT    | NOT NULL, FOREIGN KEY | Código postal al que corresponden los datos |
-| `metrica`        | TEXT    | NOT NULL, CHECK       | Tipo de indicador estadístico               |
-| `periodo`        | TEXT    | NOT NULL              | Periodo temporal de la observación          |
-| `valor`          | NUMERIC | —                    | Valor de la métrica                         |
+Restricciones:
 
-### 5.1. Métricas admitidas
+- Clave foránea `(municipio, cp)` hacia `codigos_postales`.
+- Unicidad `(municipio, cp, periodo, metrica)`.
 
-La columna `metrica` admite únicamente estos valores:
+Cuando se vuelve a consultar un periodo, el almacenamiento utiliza UPSERT para actualizar la observación existente en lugar de duplicarla. Solo se guardan datos correspondientes al ámbito consultado.
 
-- `precio_m2`: precio por metro cuadrado.
-- `compraventas`: número de compraventas.
-- `importe_medio`: importe medio en euros.
+## 5. Tabla `datos_resumen`
 
-La restricción `CHECK` impide almacenar métricas distintas de las admitidas.
+Es una tabla derivada de `datos_crudos`, preparada para consultas y visualizaciones. Tiene una fila por ubicación y periodo.
 
-### 5.2. Clave única
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `municipio` | TEXT | Municipio de la ubicación. |
+| `cp` | TEXT | Código postal o `Todos`. |
+| `periodo` | TEXT | Periodo estadístico `AAAA-MM`. |
+| `precio_m2` | NUMERIC | Precio por metro cuadrado. |
+| `compraventas` | NUMERIC | Número de compraventas. |
+| `importe_medio` | NUMERIC | Importe medio en euros. |
 
-La tabla tiene una restricción de unicidad sobre:
+Clave primaria: `(municipio, cp, periodo)`.
 
-```text
-(cp, periodo, metrica)
-```
+Las tres columnas de métricas pueden contener `NULL` cuando el indicador no está disponible. `ProcessData.py` reconstruye esta tabla a partir de `datos_crudos`; no modifica la tabla original.
 
-Esto significa que no puede existir más de una observación para la misma combinación de código postal, periodo y métrica.
+## 6. Tabla `log_descargas`
 
-La fecha de consulta no forma parte de esta clave.
+Registra cada intento de consulta, incluso cuando no se incorporan observaciones estadísticas.
 
-### 5.3. Actualización de registros
+| Campo | Tipo | Descripción |
+|---|---|---|
+| `id` | INTEGER | Identificador del intento. |
+| `fecha_descarga` | TEXT | Fecha y hora del intento. |
+| `municipio` | TEXT | Municipio de la ubicación. |
+| `cp` | TEXT | Código postal o `Todos`. |
+| `cuenta_id` | TEXT | Cuenta utilizada; puede ser `NULL` en registros históricos sin atribución. |
+| `estado` | TEXT | `completada`, `sin_datos_cp` o `error`. |
+| `valido` | INTEGER | `1`, `0` o `NULL`, según el resultado. |
+| `consulta_enviada` | INTEGER | `1` si se pulsó «Más estadísticas»; `0` si no. |
+| `observaciones` | TEXT | Información adicional del resultado o del error. |
 
-`DatabaseManager.py` utiliza una operación UPSERT.
+Interpretación de estados:
 
-Su comportamiento es:
+| Estado | `valido` | Significado |
+|---|---:|---|
+| `completada` | 1 | Consulta con datos propios de la ubicación. |
+| `sin_datos_cp` | 0 | El portal mostró datos provinciales en lugar de datos propios del CP. |
+| `error` | NULL | Se produjo un error durante el proceso. |
 
-- Si la combinación de código postal, periodo y métrica no existe, inserta un registro.
-- Si ya existe, actualiza la fecha de consulta y el valor cuando el valor recibido es diferente.
-- Si el valor no ha cambiado, no realiza una actualización innecesaria.
+`consulta_enviada` permite distinguir los errores anteriores y posteriores al envío de la consulta. El consumo mensual se calcula contando los registros enviados por cuenta.
 
-De esta manera, las nuevas consultas permiten mantener actualizada la información sin duplicar observaciones.
+## 7. Reglas para interpretar la base
 
-### 5.4. Datos válidos
+1. Identificar cada ubicación mediante `(municipio, cp)`, no solo mediante el CP.
+2. Diferenciar `Málaga / Todos` de los códigos postales del municipio de Málaga.
+3. No sumar ni promediar el dato provincial con los datos de CP.
+4. No guardar datos provinciales sustitutorios como si fueran datos de un CP.
+5. Diferenciar `fecha_consulta` de `periodo`: la primera indica cuándo se obtuvo el dato; el segundo, a qué mes corresponde.
+6. Interpretar `NULL` como dato no disponible, no como cero.
+7. Utilizar `log_descargas` para estudiar intentos; no es una tabla de estadísticas.
 
-La tabla `datos_crudos` debe contener exclusivamente observaciones correspondientes a datos propios del código postal.
+## 8. Comprobaciones de integridad
 
-Cuando el portal muestra datos provinciales en sustitución de los datos específicos de un código postal, esos valores no deben incorporarse como si pertenecieran a dicho código postal.
-
-La validez de cada consulta se registra en `log_descargas`.
-
-## 6. Tabla `datos_resumen`
-
-Contiene los datos de `datos_crudos` transformados a formato ancho. Cada fila representa una combinación única de código postal y periodo.
-
-| Campo | Tipo | Restricciones | Descripción |
-|---|---|---|---|
-| `cp` | TEXT | NOT NULL, PRIMARY KEY (compuesta), FOREIGN KEY | Código postal |
-| `periodo` | TEXT | NOT NULL, PRIMARY KEY (compuesta) | Periodo estadístico (`AAAA-MM`) |
-| `precio_m2` | NUMERIC | — | Precio por metro cuadrado |
-| `compraventas` | NUMERIC | — | Número de compraventas |
-| `importe_medio` | NUMERIC | — | Importe medio en euros |
-
-La clave primaria compuesta es `(cp, periodo)`. `cp` referencia `codigos_postales(cp)`.
-
-`ProcessData.py` obtiene los registros de `datos_crudos`, pivota `metrica` para convertir sus tres valores admitidos en columnas y realiza UPSERT sobre `datos_resumen`. Los valores no disponibles se conservan como `NULL`. La tabla es derivada: `datos_crudos` continúa siendo la fuente original y no se modifica durante la transformación.
-
-La tabla se crea desde `CreateDatabase.py` mediante `CREATE TABLE IF NOT EXISTS`. La transformación se puede ejecutar con `python -m src.ProcessData` y también se ejecuta al final del scraper.
-
-## 7. Tabla `log_descargas`
-
-Registra los intentos de consulta realizados por el scraper.
-
-A diferencia de `datos_crudos`, esta tabla conserva el historial de las consultas. No se deduplican los intentos.
-
-| Campo              | Tipo    | Restricciones         | Descripción                                |
-| ------------------ | ------- | --------------------- | ------------------------------------------- |
-| `id`             | INTEGER | PRIMARY KEY           | Identificador del registro                  |
-| `fecha_descarga` | TEXT    | NOT NULL              | Fecha y hora del intento                    |
-| `cp`             | TEXT    | NOT NULL, FOREIGN KEY | Código postal consultado                   |
-| `estado`         | TEXT    | NOT NULL, CHECK       | Resultado de la consulta                    |
-| `valido`         | INTEGER | CHECK                 | Indicador de validez                        |
-| `observaciones`  | TEXT    | —                    | Mensaje del portal o descripción del error |
-
-### 6.1. Estados posibles
-
-La columna `estado` admite tres valores:
-
-| Estado           | Significado                                                        | `valido` |
-| ---------------- | ------------------------------------------------------------------ | ---------- |
-| `completada`   | Consulta realizada correctamente y con datos propios del CP        | 1          |
-| `sin_datos_cp` | El portal muestra datos provinciales en sustitución de los del CP | 0          |
-| `error`        | Se ha producido un error técnico durante la consulta o descarga   | NULL       |
-
-La relación entre `estado` y `valido` también se comprueba desde `DatabaseManager.py` antes de insertar el registro.
-
-### 6.2. Observaciones
-
-El campo `observaciones` permite conservar información adicional sobre el resultado de la consulta.
-
-Puede incluir, por ejemplo:
-
-- Mensajes mostrados por el portal.
-- Descripciones de errores técnicos.
-- Información útil para revisar una incidencia.
-
-### 6.3. Índice
-
-La tabla dispone del índice:
-
-```text
-idx_log_descargas_cp_fecha
-```
-
-Se crea sobre las columnas:
-
-```text
-(cp, fecha_descarga)
-```
-
-Facilita las consultas del historial de descargas filtradas por código postal y fecha.
-
-## 8. Relaciones e integridad referencial
-
-Las tablas `datos_crudos` y `log_descargas` contienen una clave foránea hacia:
-
-```text
-codigos_postales(cp)
-```
-
-Esto impide registrar observaciones o intentos de consulta para códigos postales que no estén incluidos en el catálogo.
-
-`DatabaseManager.py` activa la integridad referencial en cada conexión mediante:
-
-```sql
-PRAGMA foreign_keys = ON;
-```
-
-Esta instrucción debe mantenerse activa en todas las conexiones utilizadas por el proyecto.
-
-## 9. Módulos que gestionan la base de datos
-
-### `CreateDatabase.py`
-
-Responsable de inicializar el esquema de la base de datos.
-
-Crea las tablas `codigos_postales`, `datos_crudos`, `datos_resumen`, `log_descargas` y el índice mediante `CREATE TABLE IF NOT EXISTS` y `CREATE INDEX IF NOT EXISTS`.
-
-No importa automáticamente el catálogo de códigos postales ni modifica las tablas que ya existen.
-
-### `DatabaseManager.py`
-
-Centraliza las operaciones de acceso y almacenamiento.
-
-Sus principales responsabilidades son:
-
-- Definir la ruta de la base de datos.
-- Abrir conexiones con las claves foráneas activadas.
-- Validar el esquema principal.
-- Normalizar fechas, periodos, métricas y valores.
-- Guardar o actualizar observaciones.
-- Registrar los intentos de descarga.
-- Recuperar el catálogo de códigos postales.
-
-### `ProcessData.py`
-
-Lee `datos_crudos`, pivota las tres métricas a columnas y actualiza `datos_resumen` mediante UPSERT. No modifica la tabla original.
-
-## 10. Reglas de mantenimiento
-
-Cualquier modificación futura de la base de datos debe respetar estas reglas:
-
-1. No eliminar registros históricos sin una decisión expresa.
-2. No introducir códigos postales que no estén en el catálogo maestro.
-3. Mantener la unicidad de `(cp, periodo, metrica)`.
-4. Conservar las tres métricas admitidas, salvo que se apruebe una modificación del modelo.
-5. No almacenar datos provinciales como si fueran datos específicos de un código postal.
-6. Registrar los intentos de consulta en `log_descargas`.
-7. Mantener activadas las claves foráneas.
-8. Realizar una copia de seguridad antes de cualquier modificación estructural.
-9. Comprobar la integridad de SQLite después de las operaciones de mantenimiento.
-
-## 11. Comprobaciones de integridad
-
-SQLite permite realizar comprobaciones mediante las siguientes instrucciones:
+Estas consultas permiten revisar la base:
 
 ```sql
 PRAGMA integrity_check;
-```
-
-Comprueba la integridad interna de la base de datos.
-
-```sql
 PRAGMA foreign_key_check;
 ```
 
-Comprueba que no existan incumplimientos de las claves foráneas.
-
-Para revisar las tablas existentes:
-
-```sql
-SELECT name
-FROM sqlite_master
-WHERE type = 'table';
-```
-
-Para consultar el número de registros de cada tabla:
-
-```sql
-SELECT COUNT(*) FROM codigos_postales;
-SELECT COUNT(*) FROM datos_crudos;
-SELECT COUNT(*) FROM datos_resumen;
-SELECT COUNT(*) FROM log_descargas;
-```
-
-Los recuentos pueden variar a medida que se incorporen nuevos datos y se ejecuten nuevas consultas.
-
-## 12. Copias de seguridad
-
-Antes de realizar cambios en el esquema o tareas de mantenimiento que puedan afectar a los datos, debe crearse una copia de seguridad de:
-
-```text
-data/database/inmobiliario.db
-```
-
-La copia debe conservarse separada de la base de datos activa.
-
-No se deben sustituir los datos originales hasta haber comprobado que la operación se ha realizado correctamente.
-
----
-
-**Documento de referencia:** estructura y reglas de almacenamiento de SQLite del proyecto ScraperPEN.
+La primera debe devolver `ok`. La segunda no debe devolver filas.

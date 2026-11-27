@@ -1,220 +1,212 @@
 # ScraperPEN
 
-## 1. Descripción del proyecto
+**ScraperPEN** es un proyecto de extracción, almacenamiento, procesamiento y visualización de estadísticas inmobiliarias de la provincia de Málaga. Utiliza Python y Playwright para consultar el Portal Estadístico del Notariado, SQLite para conservar el histórico y un dashboard web para explorar los resultados.
 
-ScraperPEN es un proyecto desarrollado en Python para recopilar y almacenar estadísticas inmobiliarias del **Portal Estadístico del Notariado (PEN)** correspondientes a los códigos postales de la provincia de Málaga.
+El repositorio reúne tanto el proceso de extracción como la aplicación web que presenta los datos.
 
-El proyecto utiliza Playwright para automatizar la navegación y descarga de información, pandas para trabajar con los datos y SQLite como sistema de almacenamiento.
+![Vista previa del dashboard ScraperPEN](docs/images/dashboard-preview.png)
 
-Su finalidad es construir un histórico de estadísticas inmobiliarias que pueda utilizarse posteriormente para análisis y visualización de datos.
+## Dashboard
 
-## 2. Objetivos
+El dashboard permite consultar la evolución de los indicadores provinciales y explorar los resultados disponibles por código postal. Incluye gráficos temporales, un ranking de códigos postales y un mapa interactivo.
 
-El proyecto tiene los siguientes objetivos:
+- **Aplicación publicada:** añade aquí la URL de GitHub Pages cuando esté disponible.
+- **Fuente de los datos:** Portal Estadístico del Notariado.
+- **Ámbito:** provincia de Málaga y códigos postales incluidos en el catálogo del proyecto.
+- **Tipo de vivienda analizado:** pisos de segunda mano.
 
-- Consultar las estadísticas inmobiliarias de los códigos postales de Málaga.
-- Automatizar las consultas mediante Playwright.
-- Descargar y conservar los archivos originales en Excel y PDF.
-- Extraer y normalizar las estadísticas obtenidas.
-- Almacenar los datos históricos en una base de datos SQLite.
-- Actualizar los registros existentes sin generar duplicados.
-- Registrar los resultados de las consultas y los errores producidos.
-- Preparar los datos para futuros análisis y dashboards.
+## Qué hace el proyecto
 
-## 3. Tecnologías utilizadas
+1. Consulta ubicaciones del catálogo mediante un navegador automatizado con Playwright.
+2. Descarga los informes disponibles y extrae las métricas estadísticas.
+3. Guarda las observaciones y el historial de consultas en SQLite.
+4. Transforma los datos a una tabla resumida para facilitar su análisis.
+5. Exporta la tabla resumida a un archivo JSON.
+6. Carga ese JSON en un dashboard estático desarrollado con HTML, CSS y JavaScript.
 
-| Tecnología   | Función                         |
-| ------------- | -------------------------------- |
-| Python        | Lenguaje de programación        |
-| Playwright    | Automatización del navegador    |
-| pandas        | Tratamiento de datos             |
-| openpyxl      | Lectura y escritura de Excel     |
-| python-dotenv | Gestión de variables de entorno |
-| SQLite        | Almacenamiento de datos          |
+## Indicadores del dashboard
 
-## 4. Estructura del proyecto
+- **Precio medio por metro cuadrado:** precio medio publicado para el periodo y ámbito seleccionados.
+- **Compraventas:** número de operaciones registradas.
+- **Importe medio:** importe medio de las operaciones.
+- **Superficie media estimada:** cociente entre el importe medio y el precio medio por metro cuadrado. Es un cálculo derivado y debe interpretarse como una estimación, no como una medición directa de la superficie de cada vivienda.
+
+La vista general muestra la evolución provincial y un ranking de códigos postales. La vista de códigos postales permite consultar los periodos disponibles y visualizar los valores sobre el mapa.
+
+## Tecnologías
+
+| Tecnología | Uso |
+|---|---|
+| Python | Automatización y procesamiento |
+| Playwright | Navegación automatizada y descargas |
+| pandas | Transformación de datos |
+| openpyxl | Lectura y escritura de Excel |
+| python-dotenv | Carga de configuración local |
+| SQLite | Base de datos del proyecto |
+| HTML, CSS y JavaScript | Dashboard web |
+| Leaflet | Mapa interactivo |
+| GeoJSON | Geometrías de códigos postales |
+
+## Estructura del repositorio
 
 ```text
 ScraperPEN/
-│
-├── data/
+├── data/                       # Datos locales de trabajo (no versionados)
 │   ├── database/
-│   ├── processed/
-│   └── raw/
-│       ├── excel/
-│       └── pdf/
-│
-├── resources/
-│
-├── src/
-│   ├── ScraperPEN.py
-│   ├── CreateDatabase.py
-│   ├── DatabaseManager.py
-│   └── ProcessData.py
-│
-├── tests/
-│
-├── docs/
+│   ├── raw/
+│   │   ├── excel/
+│   │   └── pdf/
+│   └── processed/
+├── docs/                       # Documentación del proyecto
 │   ├── architecture.md
 │   ├── database.md
 │   ├── data_dictionary.md
 │   ├── decisions.md
-│   └── operations.md
-│
-├── .env
+│   ├── operations.md
+│   └── images/
+├── resources/                  # Recursos de referencia usados durante el desarrollo
+├── src/
+│   ├── ScraperPEN.py
+│   ├── CreateDatabase.py
+│   ├── DatabaseManager.py
+│   ├── ProcessData.py
+│   └── ExportWebData.py
+├── web/
+│   ├── index.html
+│   ├── assets/
+│   │   ├── css/styles.css
+│   │   └── js/app.js
+│   └── data/
+│       ├── datos_resumen.json
+│       └── malaga.geojson
 ├── .env.example
 ├── .gitignore
-├── AGENTS.md
-├── README.md
-├── ROADMAP.md
-├── SEGUIMIENTO_PROYECTO.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
 ```
 
-## 5. Componentes principales
+## Datos incluidos en la versión actual
 
-### `src/`
+La exportación incluida en `web/data/datos_resumen.json` corresponde a la última generación disponible en el repositorio. Como referencia, la copia revisada el **27 de noviembre de 2026** contiene:
 
-Contiene los cuatro módulos Python principales:
+| Elemento | Resultado |
+|---|---:|
+| Ubicaciones del catálogo SQLite | 161 |
+| Códigos postales del catálogo | 160 |
+| Ámbito provincial | 1 |
+| Filas de `datos_crudos` | 2.742 |
+| Filas de `datos_resumen` | 914 |
+| Intentos registrados en `log_descargas` | 232 |
+| Ubicaciones con datos en el JSON | 63 |
+| Periodo estadístico incluido | Junio de 2025 – septiembre de 2026 |
 
-- `ScraperPEN.py`: automatiza las consultas al portal, descarga los archivos, extrae las estadísticas y coordina el proceso.
-- `CreateDatabase.py`: inicializa la estructura de la base de datos SQLite.
-- `DatabaseManager.py`: centraliza las operaciones de acceso, normalización y almacenamiento de datos.
-- `ProcessData.py`: transforma `datos_crudos` en la tabla analítica `datos_resumen`, pivotando las métricas a columnas.
+El JSON contiene observaciones de **62 códigos postales** y una ubicación provincial. El catálogo incluye más códigos postales que los que tienen observaciones disponibles en la exportación. Por eso, el selector del dashboard muestra los códigos postales que tienen datos en el JSON; los códigos sin observaciones no aparecen como opciones de consulta.
 
-### `data/`
+Estas cifras describen una copia concreta de la base de datos y pueden cambiar al actualizar el histórico y volver a generar la exportación.
 
-Contiene los datos generados por el proyecto:
+## Cómo ver el dashboard en local
 
-- `database/`: base de datos SQLite y copias de seguridad.
-- `raw/excel/`: archivos Excel originales descargados.
-- `raw/pdf/`: informes PDF originales descargados.
-- `processed/`: archivos derivados y datos procesados.
-
-### `resources/`
-
-Contiene los archivos de referencia necesarios para el proyecto, como el catálogo de códigos postales y los recursos geográficos y metodológicos.
-
-### `tests/`
-
-Contendrá las pruebas automatizadas del proyecto.
-
-### `docs/`
-
-Contiene la documentación técnica y las decisiones de diseño.
-
-## 6. Base de datos
-
-La información se almacena en SQLite mediante cuatro tablas:
-
-- `codigos_postales`: catálogo maestro de códigos postales y municipios.
-- `datos_crudos`: observaciones inmobiliarias válidas en formato largo.
-- `datos_resumen`: datos transformados en formato ancho, con una fila por código postal y periodo.
-- `log_descargas`: historial de consultas y resultados.
-
-Las tres métricas inmobiliarias almacenadas son:
-
-- `precio_m2`: precio por metro cuadrado.
-- `compraventas`: número de compraventas.
-- `importe_medio`: importe medio de las operaciones.
-
-La combinación de código postal, periodo y métrica identifica de forma única cada observación en `datos_crudos`. En `datos_resumen`, la clave primaria es `(cp, periodo)` y las tres métricas (`precio_m2`, `compraventas`, `importe_medio`) se almacenan en columnas independientes.
-
-`ProcessData.py` actualiza los registros de `datos_resumen` a partir de todos los datos de `datos_crudos`, sin modificar ni borrar la tabla original. La transformación se ejecuta al final de cada ejecución del scraper y también puede lanzarse de forma independiente.
-
-## 7. Configuración del entorno
-
-Se recomienda utilizar un entorno virtual de Python.
-
-### Crear el entorno virtual
-
-```powershell
-python -m venv .venv
-```
-
-### Activar el entorno
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-### Instalar las dependencias
-
-```powershell
-pip install -r requirements.txt
-```
-
-### Instalar el navegador de Playwright
-
-```powershell
-playwright install chromium
-```
-
-### Configurar las credenciales
-
-Crear el archivo `.env` a partir de `.env.example` y completar las credenciales de acceso al portal.
-
-Las variables utilizadas son:
-
-- `PEN_USER_EMAIL`
-- `PEN_USER_PASSWORD`
-- `PEN_CP_PRUEBA`
-- `PEN_EJECUTAR_TODOS_CP`
-
-El archivo `.env` contiene información privada y no debe publicarse en Git.
-
-## 8. Ejecución del scraper
+No es necesario ejecutar el scraper para abrir el dashboard si ya están presentes los archivos JSON y GeoJSON.
 
 Desde la raíz del proyecto:
 
 ```powershell
+python -m http.server 8000 --directory web
+```
+
+Abre en el navegador:
+
+```text
+http://localhost:8000
+```
+
+Se utiliza un servidor HTTP local porque el navegador debe cargar el JSON y el GeoJSON mediante `fetch`; abrir `index.html` directamente como archivo puede impedir esas peticiones.
+
+## Cómo preparar el scraper
+
+### 1. Crear el entorno e instalar dependencias
+
+En PowerShell, desde la raíz del repositorio:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m playwright install chromium
+```
+
+### 2. Configurar las cuentas
+
+Copia `.env.example` como `.env` y completa las variables de las cuentas que tengas configuradas para el portal. El scraper utiliza cuatro identificadores internos de cuenta (`cuenta_1` a `cuenta_4`):
+
+```dotenv
+PEN_USER_1_EMAIL=
+PEN_USER_1_PASSWORD=
+PEN_USER_2_EMAIL=
+PEN_USER_2_PASSWORD=
+PEN_USER_3_EMAIL=
+PEN_USER_3_PASSWORD=
+PEN_USER_4_EMAIL=
+PEN_USER_4_PASSWORD=
+PEN_CP_PRUEBA=29710
+PEN_EJECUTAR_TODOS_CP=0
+```
+
+El archivo `.env` contiene configuración local y no forma parte del repositorio.
+
+### 3. Ejecutar una ubicación concreta
+
+```powershell
+python -m src.ScraperPEN 29001
+```
+
+También se pueden indicar varias claves de ubicación:
+
+```powershell
+python -m src.ScraperPEN 29001 29002
+```
+
+Los argumentos se resuelven mediante el campo `clave_portal` del catálogo SQLite.
+
+### 4. Ejecutar el modo general
+
+Para habilitar el modo general en la sesión actual de PowerShell:
+
+```powershell
+$env:PEN_EJECUTAR_TODOS_CP = "1"
 python -m src.ScraperPEN
 ```
 
-Por defecto, el programa utiliza un único código postal de prueba, configurado mediante `PEN_CP_PRUEBA`, cuyo valor predeterminado es `29710`.
+Al terminar, se puede devolver el modo de prueba:
 
-Para habilitar la consulta de todo el catálogo, debe configurarse expresamente:
-
-```text
-PEN_EJECUTAR_TODOS_CP=1
+```powershell
+$env:PEN_EJECUTAR_TODOS_CP = "0"
 ```
 
-La ejecución completa debe realizarse únicamente después de validar las pruebas individuales.
+El modo general prioriza ubicaciones cuyo último intento terminó con error y después ubicaciones que todavía no se han consultado. No vuelve a incluir automáticamente ubicaciones cuyo último estado sea `completada` o `sin_datos_cp`.
 
-También es posible indicar códigos postales concretos como argumentos de ejecución, siempre que estén presentes en el catálogo.
+## Actualizar los datos del dashboard
 
-## 9. Documentación adicional
+El flujo de actualización es:
 
-El proyecto dispone de documentación específica:
+```powershell
+python -m src.ProcessData
+python -m src.ExportWebData
+```
 
-| Documento                   | Contenido                                             |
-| --------------------------- | ----------------------------------------------------- |
-| `AGENTS.md`               | Instrucciones para las IA que trabajen en el proyecto |
-| `ROADMAP.md`              | Plan de desarrollo y tareas pendientes                |
-| `SEGUIMIENTO_PROYECTO.md` | Estado actual y evolución del proyecto               |
-| `docs/architecture.md`    | Arquitectura y componentes                            |
-| `docs/database.md`        | Diseño y funcionamiento de SQLite                    |
-| `docs/data_dictionary.md` | Definición de campos y métricas                     |
-| `docs/decisions.md`       | Decisiones técnicas y arquitectónicas               |
-| `docs/operations.md`      | Instalación, ejecución y mantenimiento              |
+- `ProcessData.py` transforma `datos_crudos` en `datos_resumen`.
+- `ExportWebData.py` genera `web/data/datos_resumen.json`.
 
-## 10. Principios de desarrollo
+El JSON contiene los datos que consume directamente la aplicación web. Para que el dashboard muestre una actualización, el JSON generado debe estar disponible en `web/data/` junto con `malaga.geojson`.
 
-El desarrollo de ScraperPEN seguirá estos principios:
+## Documentación
 
-- Mantener una estructura sencilla y coherente.
-- Evitar duplicidades innecesarias.
-- Proteger las credenciales y los datos locales.
-- Conservar los archivos originales descargados.
-- Preservar la integridad de la base de datos.
-- Evitar la introducción de datos provinciales como si fueran datos propios de un código postal.
-- Validar los cambios antes de incorporarlos al proyecto.
-- Mantener actualizada la documentación.
+- [Arquitectura](docs/architecture.md): cómo se conectan los componentes.
+- [Base de datos](docs/database.md): tablas, claves y relaciones de SQLite.
+- [Diccionario de datos](docs/data_dictionary.md): significado de campos e indicadores.
+- [Decisiones técnicas](docs/decisions.md): criterios de diseño del proyecto.
+- [Guía de operaciones](docs/operations.md): instalación, ejecución y actualización.
 
-Cualquier modificación arquitectónica importante deberá analizarse antes de realizarse.
+## Estado del proyecto
 
----
-
-**Proyecto:** ScraperPEN
-**Ámbito geográfico:** provincia de Málaga, España
-**Fuente estadística:** Portal Estadístico del Notariado
+El scraper, la base SQLite, la transformación de datos, la exportación JSON y el dashboard están implementados. El dashboard puede ejecutarse como sitio estático y utiliza los archivos incluidos en `web/data/`.
