@@ -35,17 +35,17 @@ La vista general muestra la evolución provincial y un ranking de códigos posta
 
 ## Tecnologías
 
-| Tecnología | Uso |
-|---|---|
-| Python | Automatización y procesamiento |
-| Playwright | Navegación automatizada y descargas |
-| pandas | Transformación de datos |
-| openpyxl | Lectura y escritura de Excel |
-| python-dotenv | Carga de configuración local |
-| SQLite | Base de datos del proyecto |
-| HTML, CSS y JavaScript | Dashboard web |
-| Leaflet | Mapa interactivo |
-| GeoJSON | Geometrías de códigos postales |
+| Tecnología            | Uso                                  |
+| ---------------------- | ------------------------------------ |
+| Python                 | Automatización y procesamiento      |
+| Playwright             | Navegación automatizada y descargas |
+| pandas                 | Transformación de datos             |
+| openpyxl               | Lectura y escritura de Excel         |
+| python-dotenv          | Carga de configuración local        |
+| SQLite                 | Base de datos del proyecto           |
+| HTML, CSS y JavaScript | Dashboard web                        |
+| Leaflet                | Mapa interactivo                     |
+| GeoJSON                | Geometrías de códigos postales     |
 
 ## Estructura del repositorio
 
@@ -89,16 +89,16 @@ ScraperPEN/
 
 La exportación incluida en `web/data/datos_resumen.json` corresponde a la última generación disponible en el repositorio. Como referencia, la copia revisada el **27 de noviembre de 2026** contiene:
 
-| Elemento | Resultado |
-|---|---:|
-| Ubicaciones del catálogo SQLite | 161 |
-| Códigos postales del catálogo | 160 |
-| Ámbito provincial | 1 |
-| Filas de `datos_crudos` | 2.742 |
-| Filas de `datos_resumen` | 914 |
-| Intentos registrados en `log_descargas` | 232 |
-| Ubicaciones con datos en el JSON | 63 |
-| Periodo estadístico incluido | Junio de 2025 – septiembre de 2026 |
+| Elemento                                  |                           Resultado |
+| ----------------------------------------- | ----------------------------------: |
+| Ubicaciones del catálogo SQLite          |                                 161 |
+| Códigos postales del catálogo           |                                 160 |
+| Ámbito provincial                        |                                   1 |
+| Filas de `datos_crudos`                 |                               2.742 |
+| Filas de `datos_resumen`                |                                 914 |
+| Intentos registrados en `log_descargas` |                                 232 |
+| Ubicaciones con datos en el JSON          |                                  63 |
+| Periodo estadístico incluido             | Junio de 2025 – septiembre de 2026 |
 
 El JSON contiene observaciones de **62 códigos postales** y una ubicación provincial. El catálogo incluye más códigos postales que los que tienen observaciones disponibles en la exportación. Por eso, el selector del dashboard muestra los códigos postales que tienen datos en el JSON; los códigos sin observaciones no aparecen como opciones de consulta.
 
@@ -207,6 +207,8 @@ El JSON contiene los datos que consume directamente la aplicación web. Para que
 - [Decisiones técnicas](docs/decisions.md): criterios de diseño del proyecto.
 - [Guía de operaciones](docs/operations.md): instalación, ejecución y actualización.
 
-## Estado del proyecto
+## Licencia
 
-El scraper, la base SQLite, la transformación de datos, la exportación JSON y el dashboard están implementados. El dashboard puede ejecutarse como sitio estático y utiliza los archivos incluidos en `web/data/`.
+Este proyecto está publicado bajo la licencia [MIT](LICENSE).
+
+Copyright (c) 2026 MariaOrtunoR.
