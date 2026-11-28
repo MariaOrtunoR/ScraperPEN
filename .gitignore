@@ -44,3 +44,6 @@ SEGUIMIENTO_PROYECTO.md
 Thumbs.db
 .vscode/
 .idea/
+
+# Archivos locales que no se publican en GitHub
+resources/*
